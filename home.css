@@ -3,7 +3,7 @@
   padding: 0px;
 }
 
-hr {
+.hrclass {
   border: 1px;
   background-color: #ED7231;
   color: #ED7231;
@@ -15,16 +15,17 @@ hr {
 
 body {
   font-family: 'Open Sans', sans-serif;
+  font-display: swap;
 }
 
-h1 {
+.h1class {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
   padding-bottom: 15px;
 }
 
-p {
+.pclass {
   color: #ADB0B7;
   border: 2px;
   font-weight: 400;
