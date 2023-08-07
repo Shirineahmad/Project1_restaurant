@@ -5,18 +5,19 @@
     overflow-x: hidden;
 }
 
+body {
+    font-family: "Open Sans", sans-serif;
+    font-display: swap;
+}
+
 .div1 {
     background-size: cover;
     background-image: url(./Images/hero_2.jpg);
-   
     z-index: -1;
     height: 525px;
     background-position: center;
     position: relative;
-
-
 }
-
 
 .test1 {
     display: flex;
@@ -27,12 +28,10 @@
 
 }
 
-
 .div1-header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
     padding: 10px;
 }
 
@@ -42,13 +41,14 @@ nav {
 }
 
 nav ul {
-
-
     display: flex;
     justify-content: center;
     padding: 0;
     justify-content: space-between;
+}
 
+nav ul li {
+    color: white;
 }
 
 .div1-btn {
@@ -56,7 +56,6 @@ nav ul {
     background-color: #ED7231;
     color: white;
     border: none;
-
 }
 
 .test1 h1,
@@ -70,9 +69,7 @@ p {
     letter-spacing: 5px;
 }
 
-
 ul li {
-
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -91,8 +88,21 @@ ul li {
 }
 
 /* leslie css */
-.Div2 {
+.Div2:before {
+    content: "";
+    left: 0;
+    height: 100%;
+    width: 150%;
+    position: absolute;
+    top: 71%;
+    background: #f8f9fb;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    z-index: -1;
+}
 
+.Div2 {
     display: grid;
     grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px
 }
@@ -122,25 +132,6 @@ ul li {
     font-size: 12px;
 }
 
-nav ul li {
-    color: white;
-}
-
-.Div2:before {
-    content: "";
-    left: 0;
-    height: 100%;
-    width: 150%;
-    position: absolute;
-    top: 71%;
-    background: #f8f9fb;
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-
-    transform: rotate(-5deg);
-    z-index: -1;
-}
-
 /* samiha css */
 hr {
     border: 1px;
@@ -152,25 +143,20 @@ hr {
     border-bottom: 15px solid hsl(0, 100%, 100%);
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
+.h1class {
     text-align: center;
     font-size: 40px;
     font-weight: 600;
     padding-bottom: 15px;
 }
 
-p {
-    color: #ADB0B7;
+.pclass {
+    color: #adb0b7;
     border: 2px;
     font-weight: 400;
     width: 640px;
     font-size: 15px;
     padding-bottom: 30px;
-
 }
 
 .collage {
@@ -178,18 +164,14 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
-
-}
-
-img {
-    max-width: 300px;
-    height: auto;
-    margin: 10px;
 }
 
 .test {
     flex-direction: column;
     display: inherit;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
 }
 
 /* css footer */
@@ -215,8 +197,6 @@ img {
 input[type=email] {
     width: 252px;
     padding: 7px 30px;
-
-
 }
 
 .mail-input {
@@ -235,25 +215,33 @@ input[type=email] {
 .copyright_span {
     display: flex;
     justify-content: center;
-    color:  #ADB0B7;
+    color: #ADB0B7;
 }
 
 .home-link {
     color: #ED7231;
     text-decoration: underline;
 }
-.subscribe_newsletter::before{
-    content: "";
-        left: 0;
-        height: 100%;
-        width: 150%;
-        position: absolute;
-        top: 71%;
-        background: #f8f9fb;
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
-    
-        transform: rotate(-5deg);
-        z-index: -1;
 
+.subscribe_newsletter::before {
+    content: "";
+    left: 0;
+    height: 100%;
+    width: 150%;
+    position: absolute;
+    top: 71%;
+    background: #f8f9fb;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    z-index: -1;
+
+}
+
+/* css div6  samiha */
+.h1div6 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 15px;
 }
