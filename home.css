@@ -5,8 +5,8 @@
 
 .hrclass {
   border: 1px;
-  background-color: #ED7231;
-  color: #ED7231;
+  background-color: #ed7231;
+  color: #ed7231;
   height: 2px;
   width: 5%;
   margin: auto;
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-display: swap;
 }
 
@@ -26,13 +26,12 @@ body {
 }
 
 .pclass {
-  color: #ADB0B7;
+  color: #adb0b7;
   border: 2px;
   font-weight: 400;
   width: 640px;
   font-size: 15px;
   padding-bottom: 30px;
-
 }
 
 .collage {
@@ -40,7 +39,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-
 }
 
 img {
@@ -52,4 +50,21 @@ img {
 .test {
   flex-direction: column;
   display: inherit;
+}
+.hr {
+  border: 1px;
+  background-color: #ed7231;
+  color: #ed7231;
+  height: 3px;
+  width: 5%;
+  margin: auto;
+}
+.h1div6 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.pdiv6 {
+  
 }
