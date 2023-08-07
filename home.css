@@ -5,6 +5,7 @@
     overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .div1 {
     background-size: cover;
     background-image: url(./Images/hero_2.jpg);
@@ -143,9 +144,12 @@ nav ul li {
 
 
 hr {
+=======
+.hrclass {
+>>>>>>> auto-correction
   border: 1px;
-  background-color: #ED7231;
-  color: #ED7231;
+  background-color: #ed7231;
+  color: #ed7231;
   height: 2px;
   width: 5%;
   margin: auto;
@@ -153,24 +157,24 @@ hr {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-display: swap;
 }
 
-h1 {
+.h1class {
   text-align: center;
   font-size: 40px;
   font-weight: 600;
   padding-bottom: 15px;
 }
 
-p {
-  color: #ADB0B7;
+.pclass {
+  color: #adb0b7;
   border: 2px;
   font-weight: 400;
   width: 640px;
   font-size: 15px;
   padding-bottom: 30px;
-
 }
 
 .collage {
@@ -178,7 +182,6 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-
 }
 
 img {
@@ -190,4 +193,21 @@ img {
 .test {
   flex-direction: column;
   display: inherit;
+}
+.hr {
+  border: 1px;
+  background-color: #ed7231;
+  color: #ed7231;
+  height: 3px;
+  width: 5%;
+  margin: auto;
+}
+.h1div6 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.pdiv6 {
+  
 }
