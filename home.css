@@ -176,7 +176,10 @@ hr {
   height: auto;
   margin: 10px;
 }
-
+.test {
+  display: inherit;
+  flex-direction: column;
+}
 /* CSS Div5 leslie */
 .our-menu {
   background-color: #f8f9fb;
@@ -276,6 +279,14 @@ hr {
   padding-bottom: 15px;
 }
 /* css samihadiv7 */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.Blogs {
+  display: flex;
+  flex-direction: row;
+}
 .datepicker {
   width: 15px;
   height: 15px;
