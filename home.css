@@ -1,0 +1,131 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* CSS Special Menu */
+
+.special-menu hr {
+    border: 1px;
+    background-color: #ed7231;
+    color: #ed7231;
+    height: 2px;
+    width: 5%;
+    margin: auto;
+}
+
+.special-menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.special-menu h1 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+.special-menu-item {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.special-menu-1 {
+    background-image: url(./special-menu-images/1special-menu.png);
+    background-size: cover;
+    width: 250px;
+    height: 400px;
+    background-position: center;
+}
+
+.special-menu-2 {
+    background-image: url(./special-menu-images/2special-menu.png);
+    background-size: cover;
+    width: 250px;
+    height: 400px;
+    background-position: center;
+}
+
+.special-menu-3 {
+    background-image: url(./special-menu-images/3special-menu.png);
+    background-size: cover;
+    width: 250px;
+    height: 400px;
+    background-position: center;
+}
+
+.special-menu-prices {
+    color: #FFFFFF;
+    background-color: #ed7231;
+    border-radius: 100%;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.special-menu-dish {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+}
+
+/* CSS Testimonial */
+
+.testimonial hr {
+    border: 1px;
+    background-color: #ed7231;
+    color: #ed7231;
+    height: 2px;
+    width: 5%;
+    margin: auto;
+}
+
+.testimonial h1 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.testimonial-text {
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    padding: 0px 150px;
+}
+
+.testimonial-reviewer {
+    display: flex;
+    margin: 100px;
+}
+
+.testimonial-picture {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial-signature {
+    display: block;
+    padding-left: 20px;
+    padding-top: 15px; 
+}
+
+.testimonial-name {
+    text-align: left;
+}
+
+.testimonial-position {
+    text-align: left;
+    color: #ADB0B7;
+}
