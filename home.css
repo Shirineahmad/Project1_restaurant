@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-display: swap;
+    background: #F8F9FB;
+    overflow-x: hidden;
+}
+
+.Div2 {
+    /* Diagonal bi-color background
+    background: linear-gradient(to right bottom, #F8F9FB 50%, white 50%);*/
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 1fr 50px
+}
+
+.Div2 div {
+    padding: 0px 12px;
+}
+
+.icons {
+    background: #ED7231;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.Div2 h6 {
+    font-weight: 300;
+    color: #ED7231;
+    letter-spacing: 3px;
+    padding: 10px 0px;
+}
+
+.Div2 p {
+    color: #ADB0B7;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.Div2:before {
+    content: "";
+    left: 0;
+    height: 100%;
+    width: 150%;
+    position: absolute;
+    top: 72%;
+    background: #f8f9fb;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+
+/* CSS Div5 */
+
+.our-menu
+    {
+    background-color: #F8F9FB;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99vw;
+    margin: 0;
+}
+
+hr {
+    border: 1px;
+    background-color: #ED7231;
+    color: #ED7231;
+    height: 2px;
+    width: 5%;
+    margin: auto;
+}
+
+.our-menu h1 {
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+.grid-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 140px);
+    grid-gap: 0px;
+    margin: 75px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.grid-item img {
+    width: 140px;
+    object-fit: cover;
+    ;
+    margin: 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+.dish {
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin: 10px 15px;
+    font-size: 12px;
+}
+
+.our-menu p {
+    color: #ADB0B7;
+    font-weight: 300;
+    font-size: 11px;
+    margin: 10px 15px;
+}
+
+.prices {
+    color: #ED7231;
+    font-size: 15px;
+    font-weight: 300;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin: 10px 15px 5px 15px;
+}
+
+.grid-menu-caesar {
+    background-image: url(./Images/menu1.png);
+    background-size: cover;
+}
+
+.grid-menu-bacon {
+    background-image: url(./Images/menu2.png);
+    background-size: cover;
+}
+
+.grid-menu-calamari {
+    background-image: url(./Images/menu3.png);
+    background-size: cover;
+}
+
+.grid-menu-tuna {
+    background-image: url(./Images/menu4.png);
+    background-size: cover;
+}
