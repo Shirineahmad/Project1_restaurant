@@ -87,15 +87,15 @@ ul li {
     padding: 6px;
 }
 
- /*leslie css  */
+/*leslie css  */
 .Div2:before {
-content: "";
+    content: "";
     left: 0;
     height: 334PX;
     width: 150%;
     position: absolute;
     top: 70%;
-    background-color:#f8f9fb;
+    background-color: #f8f9fb;
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     transform: rotate(-5deg);
@@ -107,10 +107,7 @@ content: "";
     display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
     padding: 60px 0px;
-    
- 
-
-} 
+}
 
 .Div2 div {
     padding: 0px 12px;
@@ -138,9 +135,10 @@ content: "";
 }
 
 /* samiha css */
-.div3{
+.div3 {
     padding: 60px 0px;
 }
+
 hr {
     border: 1px;
     background-color: #ED7231;
@@ -152,18 +150,19 @@ hr {
 
 .h1class {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding-bottom: 15px;
 }
 
 .pclass {
     color: #adb0b7;
-    border: 2px;
     font-weight: 400;
     width: 640px;
     font-size: 15px;
     padding-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .collage {
@@ -185,11 +184,11 @@ hr {
 }
 
 /* CSS Div5 leslie */
-.our-menu
-    {
+.our-menu {
     background-color: #F8F9FB;
     align-content: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 99vw;
@@ -207,7 +206,7 @@ hr {
 
 .our-menu h1 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -220,7 +219,6 @@ hr {
 
 .grid-item {
     background-color: #ffffff;
-    width: 100%;
 }
 
 .grid-item img {
@@ -235,24 +233,26 @@ hr {
 .dish {
     font-weight: 400;
     margin-bottom: 0px;
-    margin: 10px 15px;
-    font-size: 12px;
+    padding: 10px 15px;
+    padding-right: 5px;  
+    font-size: 11px;
 }
 
 .our-menu p {
     color: #ADB0B7;
     font-weight: 300;
-    font-size: 11px;
-    margin: 10px 15px;
+    font-size: 10px;
+    padding-left: 15px; 
+    padding-right: 5px;
 }
 
 .prices {
     color: #ED7231;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin: 10px 15px 5px 15px;
+    padding: 10px 15px; 
 }
 
 .grid-menu-caesar {
@@ -278,8 +278,8 @@ hr {
 /* css div6  samiha */
 .h1div6 {
     text-align: center;
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 800;
     padding-bottom: 15px;
 }
 
@@ -321,15 +321,25 @@ input[type=email] {
     padding: 50px 112px;
 }
 
+.footer_part1 p {
+    color: #ADB0B7;
+    font-size: 12px;
+}
+
+.footer_part12 p {
+    color: #ADB0B7;
+    font-size: 12px;
+}
+.home-link {
+    color: #ED7231;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
 .copyright_span {
     display: flex;
     justify-content: center;
     color: #ADB0B7;
-}
-
-.home-link {
-    color: #ED7231;
-    text-decoration: underline;
 }
 
 /* .subscribe_newsletter::before {
