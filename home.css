@@ -1,55 +1,84 @@
-* {
+body {
+  display: block;
   margin: 0px;
   padding: 0px;
-}
+  box-sizing: border-box;
 
-.hrclass {
-  border: 1px;
-  background-color: #ED7231;
-  color: #ED7231;
-  height: 2px;
-  width: 5%;
-  margin: auto;
-  border-bottom: 15px solid hsl(0, 100%, 100%);
+  font-family: "Open Sans", sans-serif;
 }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-display: swap;
+.container {
+  display: block;
+  width: 100%;
 }
-
-.h1class {
+h1 {
   text-align: center;
   font-size: 40px;
-  font-weight: 600;
+  font-weight: 800;
   padding-bottom: 15px;
 }
-
-.pclass {
-  color: #ADB0B7;
-  border: 2px;
-  font-weight: 400;
-  width: 640px;
-  font-size: 15px;
-  padding-bottom: 30px;
-
+.Blogs {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 50px;
+  grid-gap: 10px;
+  margin: auto;
 }
-
-.collage {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-
-}
-
-img {
-  max-width: 300px;
+.Blog1 {
+  position: relative;
+  width: auto;
   height: auto;
-  margin: 10px;
+  object-fit: cover;
 }
 
-.test {
-  flex-direction: column;
-  display: inherit;
+.Blog2 {
+  position: relative;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.image1 img {
+  width: 500px;
+  position: relative;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.image2 img {
+  width: 500px;
+  position: relative;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.read-more {
+  background-color: #ed7231;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.datepicker {
+  width: 15px;
+  height: 15px;
+}
+.dateposted {
+  font-size: small;
+  color: #adb0b7;
+}
+.h4 {
+  color: #ed7231;
+}
+.p1 {
+  font-size: small;
+  color: #adb0b7;
+}
+.p2 {
+  font-size: small;
+  color: #adb0b7;
 }
