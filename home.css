@@ -184,10 +184,93 @@ hr {
     flex-direction: column;
 }
 
+/* CSS Special Menu */
+.special-menu {
+    margin-bottom: 210px;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-menu hr {
+    border: 1px;
+    background-color: #ed7231;
+    color: #ed7231;
+    height: 2px;
+    width: 5%;
+    margin: auto;
+}
+
+.special-menu-container {
+    display: flex;
+}
+
+.special-menu h1 {
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+.special-menu-item {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.special-menu-1 {
+    background-image: url(./special-menu-images/1special-menu.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.special-menu-2 {
+    background-image: url(./special-menu-images/2special-menu.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.special-menu-3 {
+    background-image: url(./special-menu-images/3special-menu.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-position: center;
+}
+
+.special-menu-prices {
+    color: #FFFFFF;
+    background-color: #ed7231;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.special-menu-dish {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    top: 50%;
+}
+
 /* CSS Div5 leslie */
 
 .our-menu {
-    background-color: #f8f9fb;
+    
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -200,11 +283,11 @@ hr {
 .our-menu:before {
     content: "";
     left: 0;
-    height: 883px;
+    height: 780px;
     width: 150%;
     position: absolute;
-    top: 259%;
-    background-color:#f8f9fb;
+    top: 390%;
+    background-color: #f8f9fb;
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     transform: rotate(-5deg);
@@ -390,9 +473,8 @@ hr {
     height: 750px;
     width: 150%;
     position: absolute;
-    top: 471%;
+    top: 600%;
     background-color: #f8f9fb;
-
     transform: rotate(-5deg);
     z-index: -1;
     left: -45px;
@@ -426,16 +508,15 @@ hr {
 
 
 .image1 {
+    object-fit: cover;
     width: 500px;
     height: 279px;
-
 }
 
 .image2 {
+    object-fit: cover;
     width: 500px;
     height: 279px;
-
-
 }
 
 .datepicker {
