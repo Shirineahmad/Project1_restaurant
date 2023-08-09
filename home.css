@@ -1,4 +1,4 @@
-/* shirin css */
+/* CSS header by Shirin */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ body {
     font-display: swap;
 }
 
-.burger-div {
+.burger-container {
     visibility: hidden;
 }
 
@@ -18,16 +18,16 @@ body {
     height: 55px;
 }
 
-.div1 {
+.header-container {
     background-size: cover;
-    background-image: url(./Images/hero_2.jpg);
+    background-image: url(./header-images/main-slider1.jpg);
     z-index: -1;
     height: 525px;
     background-position: center;
     position: relative;
 }
 
-.test1 {
+.header-slider-texts {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@ body {
     padding-block-start: 145px;
 }
 
-.div1-header {
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -58,20 +58,21 @@ nav ul li {
     color: white;
 }
 
-.div1-btn {
+.header-contact-button {
     width: 8%;
     background-color: #ed7231;
     color: white;
     border: none;
 }
 
-.test1 h1,
+.header-slider-texts h1,
 p {
     color: white;
 }
 
-.div1-logo {
+.header-logo {
     width: 10%;
+    font-size:24px; 
     color: #ffffff;
     letter-spacing: 5px;
 }
@@ -83,19 +84,19 @@ ul li {
     list-style-type: none;
 }
 
-.main-page {
+.header-home-button {
     color: #ed7231;
 }
 
-.test1 button {
+.header-slider-texts button {
     border: 2px solid white;
     background-color: transparent;
     color: white;
     padding: 6px;
 }
 
-/*leslie css  */
-.Div2:before {
+/*CSS icons by Leslie */
+.icons-container:before {
     content: "";
     left: 0;
     height: 334px;
@@ -110,13 +111,13 @@ ul li {
     left: -45px;
 }
 
-.Div2 {
+.icons-container {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
     padding: 60px 0px;
 }
 
-.Div2 div {
+.icons-container div {
     padding: 0px 12px;
 }
 
@@ -128,43 +129,34 @@ ul li {
     height: 20px;
 }
 
-.Div2 h6 {
+.icons-container h6 {
     font-weight: 300;
     color: #ed7231;
     letter-spacing: 3px;
     padding: 10px 0px;
 }
 
-.Div2 p {
+.icons-container p {
     color: #adb0b7;
     font-weight: 300;
     font-size: 12px;
 }
 
-/* samiha css */
+/* CSS the restaurants by Samiha */
 .div3 {
     padding-bottom: 138px;
     margin: 101px 0px;
     padding: 60px 0px;
 }
 
-hr {
-    border: 1px;
-    background-color: #ed7231;
-    color: #ed7231;
-    height: 2px;
-    width: 5%;
-    margin: auto;
-}
-
-.h1class {
+.restaurant-container h1 {
     text-align: center;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 800;
     padding-bottom: 15px;
 }
 
-.pclass {
+.restaurant-container p {
     color: #adb0b7;
     font-weight: 400;
     width: 640px;
@@ -174,48 +166,40 @@ hr {
     margin: 0 auto;
 }
 
-.collage {
+.restaurant-collage {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
 }
 
-.img-collage {
+.collage-image {
     max-width: 300px;
     height: auto;
     margin: 10px;
 }
 
-.test {
+.collage-duo {
     display: inherit;
     flex-direction: column;
 }
 
-/* CSS Special Menu */
-.special-menu {
+/* CSS special menu by Leslie */
+.special-menu-container {
     margin-bottom: 210px;
     display: flex;
     flex-direction: column;
 }
 
-.special-menu hr {
-    border: 1px;
-    background-color: #ed7231;
-    color: #ed7231;
-    height: 2px;
-    width: 5%;
-    margin: auto;
-}
-
-.special-menu-container {
+.special-menu {
     display: flex;
 }
 
-.special-menu h1 {
-    font-weight: 800;
-    font-size: 30px;
+.special-menu-container h1 {
     text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 15px;
 }
 
 .special-menu-item {
@@ -266,7 +250,7 @@ hr {
     font-size: 15px;
 }
 
-.special-menu-dish {
+.special-menu-dishes {
     color: #FFFFFF;
     font-weight: 400;
     font-size: 15px;
@@ -275,9 +259,9 @@ hr {
     top: 50%;
 }
 
-/* CSS Div5 leslie */
+/* CSS our menu by Leslie */
 
-.our-menu {
+.our-menu-container {
 
     align-content: center;
     display: flex;
@@ -288,7 +272,7 @@ hr {
     margin-bottom: 150px;
 }
 
-.our-menu:before {
+.our-menu-container:before {
     content: "";
     left: 0;
     height: 780px;
@@ -303,8 +287,6 @@ hr {
     left: -58px;
 }
 
-
-
 hr {
     border: 1px;
     background-color: #ed7231;
@@ -314,24 +296,25 @@ hr {
     margin: auto;
 }
 
-.our-menu h1 {
-    font-weight: 800;
-    font-size: 30px;
+.our-menu-container h1 {
     text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 15px;
 }
 
-.grid-menu {
+.our-menu-grid {
     display: grid;
     grid-template-columns: repeat(4, 140px);
     grid-gap: 0px;
     margin: 75px;
 }
 
-.grid-item {
+.our-menu-grid-item {
     background-color: #ffffff;
 }
 
-.grid-item img {
+.our-menu-grid-item img {
     width: 140px;
     object-fit: cover;
     margin: 0px;
@@ -339,7 +322,7 @@ hr {
     height: auto;
 }
 
-.dish {
+.our-menu-dishes {
     font-weight: 400;
     margin-bottom: 0px;
     padding: 10px 15px;
@@ -347,7 +330,7 @@ hr {
     font-size: 11px;
 }
 
-.our-menu p {
+.our-menu-container p {
     color: #adb0b7;
     font-weight: 300;
     font-size: 10px;
@@ -355,7 +338,7 @@ hr {
     padding-right: 5px;
 }
 
-.prices {
+.our-menu-prices {
     color: #ed7231;
     font-size: 12px;
     font-weight: 300;
@@ -365,28 +348,28 @@ hr {
 }
 
 .grid-menu-caesar {
-    background-image: url(./Images/menu1.png);
+    background-image: url(./our-menu-images/menu1.png);
     background-size: cover;
 }
 
 .grid-menu-bacon {
-    background-image: url(./Images/menu2.png);
+    background-image: url(./our-menu-images/menu2.png);
     background-size: cover;
 }
 
 .grid-menu-calamari {
-    background-image: url(./Images/menu3.png);
+    background-image: url(./our-menu-images/menu3.png);
     background-size: cover;
 }
 
 .grid-menu-tuna {
-    background-image: url(./Images/menu4.png);
+    background-image: url(./our-menu-images/menu4.png);
     background-size: cover;
 }
 
-/* css div6  samiha */
+/* CSS  testimonial  by Samiha */
 
-.div6 {
+.testimonial-container {
     display: flex;
     row-gap: 50px;
     flex-direction: column;
@@ -394,46 +377,9 @@ hr {
     /* align-items: center; */
     margin-bottom: 199px;
     row-gap: 60px;
-
 }
 
-.div6-part1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 15px;
-}
-
-.div6-part2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 22px;
-}
-
-.div6-part3 {
-    display: flex;
-    align-items: center;
-    padding-right: 500px;
-    column-gap: 20px;
-}
-
-.h1div6 {
-
-    font-size: 30px;
-    font-weight: 800;
-    /* padding-bottom: 15px; */
-}
-
-.company-name {
-    color: #ADB0B7;
-}
-
-.name-shef {
-    color: #040404;
-}
-
-.hr-special {
+.testimonial-container hr {
     border: 1px;
     background-color: #ed7231;
     color: #ed7231;
@@ -442,41 +388,61 @@ hr {
     margin: auto;
 }
 
-.pdiv6 {
+.testimonial-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.testimonial-heading h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.testimonial-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 22px;
+}
+
+.testimonial-text p {
     text-align: justify;
     color: #040404;
 }
 
-.div6-part3 {
+.testimonial-reviewer {
     display: flex;
     align-items: center;
-
+    padding-right: 500px;
+    column-gap: 20px;
 }
 
-.div6-part4 {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.img-shef {
+.testimonial-reviewer img {
     border-radius: 60px;
     width: 50px;
     height: 50px;
 }
 
-*/
-/* css samiha blog */
-
-
-
-.blog-div {
-    background-color: #f8f9fb;
-    margin-bottom: 20px;
+.testimonial-signature {
+    display: flex;
+    flex-direction: column;
 }
 
-.blog-div:before {
+.testimonial-name {
+    color: #040404;
+}
+
+.testimonial-company {
+    color: #ADB0B7;
+}
+
+/* CSS blog by Samiha */
+
+.blog-container:before {
     content: "";
     height: 750px;
     width: 150%;
@@ -488,71 +454,75 @@ hr {
     left: -45px;
 }
 
-.h1 {
+.blog-container {
+    background-color: #f8f9fb;
+    margin-bottom: 20px;
+}
+
+.blog-container h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 800;
     padding-bottom: 15px;
 }
 
-
-.Blogs {
+.blog-part {
     display: flex;
     column-gap: 50px;
     grid-template-columns: 1fr 1fr;
-
     justify-content: center;
-
 }
 
-.Blog1 {
+.blog-block {
     background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-
 }
 
-
-
-.image1 {
+.blog-block1-image {
     object-fit: cover;
     width: 500px;
     height: 279px;
 }
 
-.image2 {
+.blog-block2-image {
     object-fit: cover;
     width: 500px;
     height: 279px;
 }
 
-.datepicker {
+.blog-block h4 {
+    color: #ed7231;
+    padding-left: 12px;
+    font-weight: 400;
+}
+
+.blog-calendar {
     padding-left: 12px;
     width: 15px;
     height: 15px;
 }
 
-.dateposted {
-    font-size: small;
+.blog-date {
+    font-size: 12px;
     color: #adb0b7;
 }
 
-.h4 {
-    color: #ed7231;
-    padding-left: 12px;
+.blog-date span {
+    padding-left: 5px;
 }
 
-.p1,
-.p2 {
-    font-size: small;
+.blog-block p {
+    font-size: 14px;
     color: #adb0b7;
     padding-left: 12px;
 }
 
-
-.read-more {
+.blog-read-more {
     background-color: #ed7231;
+    font-size: 15px;
+    font-weight: 300;
     color: #FFFFFF;
     width: max-content;
     padding: 5px 7px;
@@ -561,140 +531,134 @@ hr {
     margin-bottom: 12px;
 }
 
-
-/* css footer */
-.subscribe_newsletter {
+/* CSS footer by Shirin*/
+.subscribe-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 270px;
 }
 
-.sucbscribe_p {
+.subscribe-container p {
     width: 400px;
     color: #adb0b7;
     padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
 }
 
-.subscribe-btn {
+.subscribe-button {
     background-color: #ed7231;
-    color: white;
-    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+    width: max-content;
+    padding: 5px 7px;
     border: none;
 }
 
 input[type="email"] {
     width: 252px;
-    padding: 7px 30px;
+    padding: 7px 7px;
+    font-weight: 300;
 }
 
-.mail-input {
+.subscribe-mail-input {
     display: flex;
     column-gap: 25px;
 }
 
-.footer {
+.before-footer {
+    padding: 50px 112px;
+}
+
+.footer-container {
     display: flex;
     justify-content: space-around;
 }
 
-.before_footer {
-    padding: 50px 112px;
+.footer-container h6 {
+    font-weight: 600;
+    font-size: 12px;
 }
 
-.footer_part1 {
+.footer-part1 {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.footer_part1 p {
+.footer-part1 p {
     color: #adb0b7;
     font-size: 12px;
 }
 
-.icon-social {
+.footer-icons {
     display: flex;
     column-gap: 20px;
 }
 
-.footer-p-gray {
-    color: #adb0b7;
-    font-size: 12px;
-}
-
-.footer-p-black {
+.footer-black-text {
     color: #040404;
     font-size: 12px;
 }
 
-.home-link {
+.footer-gray-text {
+    color: #adb0b7;
+    font-size: 12px;
+}
+
+.footer-link {
     color: #ed7231;
     font-size: 12px;
     text-decoration: underline;
 }
 
-.copyright_span {
-    display: flex;
-    justify-content: center;
-    color: #adb0b7;
-}
-
-.contact-info {
+.footer-contact-info {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.footer_part12 {
+.footer-part2 {
     display: flex;
     flex-direction: column;
     row-gap: 27px;
 }
 
-/* .subscribe_newsletter::before {
-    content: "";
-    left: 0;
-    height: 100%;
-    width: 150%;
-    position: absolute;
-    top: 71%;
-    background: #4f7cd6;
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    z-index: -1;
-} */
+.copyright-span {
+    display: flex;
+    justify-content: center;
+    color: #adb0b7;
+    font-size: 11px;
+}
+
+/* Responsive */
 @media screen and (max-width:390px) {
 
-    .div1-logo {
+    .header-logo {
         font-size: 20px;
         width: 100%;
         letter-spacing: 3px;
     }
 
-    .div1-btn {
+    .header-contact-button {
         display: none;
     }
 
-    nav {
+    .header-container nav {
         display: none;
-
     }
 
-    .burger-div {
+    .burger-container {
         visibility: visible;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-
-
     }
 
     .burger-menu {
-       
         height: 55px;
     }
-
 
 }
