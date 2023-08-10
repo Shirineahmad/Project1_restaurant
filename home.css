@@ -9,14 +9,32 @@ body {
     font-family: "Open Sans", sans-serif;
     font-display: swap;
 }
-
-.burger-container {
-    visibility: hidden;
-}
-
 .burger-menu {
-    height: 55px;
+    display: none;
+    
+    
 }
+.bar{
+    width: 30px;
+    height: 3px;
+   
+    background-color: white;
+    margin: 6px 0px;
+}
+.nav-links{
+    display: block;
+}
+.nav-links:active{
+    display: block;
+}
+.nav-links ul{
+    list-style: none;
+    padding: 0;
+}
+.nav-links li{
+    margin: 10px;
+}
+
 
 .header-container {
     background-size: cover;
@@ -650,15 +668,23 @@ input[type="email"] {
         display: none;
     }
 
-    .burger-container {
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+ 
+    .burger-menu {
+        display: block;
+    }
+    .nav-links:active{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ed7231;
+        width: 100px;
+        padding: 20px;
+        z-index: 1;
+
+    }
+    .nav-links:active ul{
+        text-align: center;
     }
 
-    .burger-menu {
-        height: 55px;
-    }
 
 }
