@@ -72,7 +72,7 @@ p {
 
 .header-logo {
     width: 10%;
-    font-size:24px; 
+    font-size: 24px;
     color: #ffffff;
     letter-spacing: 5px;
 }
@@ -98,7 +98,6 @@ ul li {
 /*CSS icons by Leslie */
 .icons-container:before {
     content: "";
-    left: 0;
     height: 334px;
     width: 150%;
     position: absolute;
@@ -262,7 +261,6 @@ ul li {
 /* CSS our menu by Leslie */
 
 .our-menu-container {
-
     align-content: center;
     display: flex;
     flex-direction: column;
@@ -660,5 +658,43 @@ input[type="email"] {
     .burger-menu {
         height: 55px;
     }
+
+    /* Responsive Restaurant and Special Menu by Leslie */
+
+    .restaurant-container p {
+        width: 85%;
+    }
+
+    .restaurant-collage {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .collage-image {
+        max-width: none;
+    }
+
+    .fourth-picture {
+        display: none;
+    }
+
+    .special-menu {
+        display: block;
+    }
+
+    /* Responsive Our menu by Leslie */
+    .our-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 140px);
+        grid-gap: 0px;
+        margin: 75px;
+    }
+
+    .our-menu-hidden-responsive {
+        display: none;
+    }
+    .our-menu-grid{
+    
+}
 
 }
