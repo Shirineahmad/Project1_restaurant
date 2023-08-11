@@ -659,7 +659,7 @@ input[type="email"] {
         height: 55px;
     }
 
-    /* Responsive Restaurant and Special Menu by Leslie */
+    /* Responsive the restaurant and special menu by Leslie */
 
     .restaurant-container p {
         width: 85%;
@@ -682,7 +682,7 @@ input[type="email"] {
         display: block;
     }
 
-    /* Responsive Our menu by Leslie */
+    /* Responsive our menu by Leslie */
     .our-menu-grid {
         display: grid;
         grid-template-columns: repeat(2, 140px);
@@ -693,8 +693,45 @@ input[type="email"] {
     .our-menu-hidden-responsive {
         display: none;
     }
-    .our-menu-grid{
-    
-}
+
+    /* .rowtest:nth-child(7) {
+        grid-row:8 ; 
+    }
+
+    .rowtest:nth-child(8) {
+        grid-row: 7;
+    }
+
+    .rowtest:nth-child(2) {
+        grid-row: 3; 
+    }
+
+.rowtest:nth-child(2) {
+        grid-row: 3;
+    }*/
+
+    /* Responsive testimonial and blog by Leslie */
+    .testimonial-text {
+        width: 85%;
+    }
+
+    .testimonial-text p br {
+        display: none;
+    }
+
+    .testimonial-reviewer {
+        padding-left: 550px;
+        width: 100%;
+    }
+
+    .blog-part {
+        display: block;
+    }
+
+    .blog-block {
+        transform: scale(0.9);
+    }
+
+    /* Responsive newsletter and footer */
 
 }
