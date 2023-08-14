@@ -609,7 +609,7 @@ input[type="email"] {
 .footer-link {
     color: #ed7231;
     font-size: 12px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-contact-info {
@@ -629,6 +629,15 @@ input[type="email"] {
     justify-content: center;
     color: #adb0b7;
     font-size: 11px;
+}
+
+.mobile-before-footer {
+    display: none;
+    padding: 20px 20px;
+}
+
+.mobile-footer-container {
+    display: flex;
 }
 
 /* Responsive */
@@ -679,7 +688,24 @@ input[type="email"] {
     }
 
     .special-menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: center;
+    }
+
+    .special-menu-item {
+        margin: 0px;
+        width: 85%;
+        max-height: 300px;
+    }
+
+    .special-menu-container {
+        margin-bottom: 0px;
+    }
+
+    .our-menu-container {
+        margin-bottom: 0px;
     }
 
     /* Responsive our menu by Leslie */
@@ -697,20 +723,23 @@ input[type="email"] {
     /* .rowtest:nth-child(7) {
         grid-row:8 ; 
     }
-
     .rowtest:nth-child(8) {
         grid-row: 7;
     }
-
     .rowtest:nth-child(2) {
         grid-row: 3; 
     }
-
-.rowtest:nth-child(2) {
+    .rowtest:nth-child(2) {
         grid-row: 3;
     }*/
 
     /* Responsive testimonial and blog by Leslie */
+
+    .testimonial-container {
+        margin-bottom: 0px;
+        row-gap: 30px;
+    }
+
     .testimonial-text {
         width: 85%;
     }
@@ -732,6 +761,37 @@ input[type="email"] {
         transform: scale(0.9);
     }
 
+    .blog-block br {
+        display: none;
+    }
+
     /* Responsive newsletter and footer */
 
+    input[type="email"] {
+        width: 200px;
+    }
+
+    .before-footer {
+        display: none;
+    }
+
+    .mobile-before-footer {
+        display: block;
+    }
+
+    .subscribe-container {
+        margin-top: 0px;
+    }
+
+    .footer-part2 {
+        row-gap: 10px;
+    }
+
+    .footer-contact-info {
+        row-gap: 10px;
+    }
+
+    .footer-icons {
+        padding-top: 25px;
+    }
 }
