@@ -1,13 +1,34 @@
 
-const burgerMenu = document.querySelector(".burger-menu");
-const navLinks = document.querySelector(".nav-links");
-console.log(burgerMenu);
-console.log(navLinks);
 
+const burgerIcon = document.getElementById('burger-icon');
+const menu = document.getElementById('menu');
 
-    
-burgerMenu.addEventListener('click', (event) => {
-    if (event.target.classList.contains('burger-menu')) {
-        navLinks.classList.toggle('active');
+burgerIcon.addEventListener('click', function () {
+    menu.classList.toggle('active');
+});
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
-})
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}

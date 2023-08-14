@@ -9,40 +9,125 @@ body {
     font-family: "Open Sans", sans-serif;
     font-display: swap;
 }
+
 .burger-menu {
     display: none;
-    
-    
 }
-.bar{
-    width: 30px;
-    height: 3px;
-   
-    background-color: white;
-    margin: 6px 0px;
-}
-.nav-links{
-    display: block;
-}
-.nav-links:active{
-    display: block;
-}
-.nav-links ul{
-    list-style: none;
-    padding: 0;
-}
-.nav-links li{
-    margin: 10px;
-}
-
 
 .header-container {
     background-size: cover;
-    background-image: url(./header-images/main-slider1.jpg);
-    z-index: -1;
+
     height: 525px;
     background-position: center;
     position: relative;
+}
+
+.header-container img {
+    clip-path: polygon(0 0, 0% 0%, 0% 100%, 236% 0%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: inherit;
+    filter: brightness(0.6);
+
+
+
+
+}
+
+.header-container:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    height: 100%;
+    clip-path: polygon(100% 100%, 100% 100%, 0% 83%, 90% 38%);
+    clip-path: polygon(100% 100%, 100% 100%, 0% 100%, 100% 56%);
+}
+
+.icons-container::before {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* next and prev */
+.next {
+    right: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    margin-top: -15px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 43%;
+    width: auto;
+    margin-top: -15px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+
+
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover {
+    background-color: black;
+}
+
+.prev:hover {
+    background-color: black;
 }
 
 .header-slider-texts {
@@ -60,19 +145,19 @@ body {
     padding: 10px;
 }
 
-nav {
+.nav-desktop {
     width: 35%;
     align-self: center;
 }
 
-nav ul {
+.nav-desktop ul {
     display: flex;
     justify-content: center;
     padding: 0;
     justify-content: space-between;
 }
 
-nav ul li {
+.nav-desktop ul li {
     color: white;
 }
 
@@ -90,7 +175,7 @@ p {
 
 .header-logo {
     width: 10%;
-    font-size:24px; 
+    font-size: 24px;
     color: #ffffff;
     letter-spacing: 5px;
 }
@@ -117,22 +202,42 @@ ul li {
 .icons-container:before {
     content: "";
     left: 0;
-    height: 334px;
-    width: 150%;
+    height: 130px;
+    width: 104%;
     position: absolute;
     top: 70%;
     background-color: #f8f9fb;
     -webkit-transform: rotate(-5deg);
     -moz-transform: rotate(-5deg);
     transform: rotate(-5deg);
-    z-index: -1;
     left: -45px;
+}
+
+
+.icons-container:after {
+    content: "";
+    left: 0;
+    height: 149px;
+    width: 104%;
+    position: absolute;
+    top: 125%;
+    background-color: #f8f9fb;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    left: -45px;
+
 }
 
 .icons-container {
     display: grid;
     grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
-    padding: 60px 0px;
+    padding: 122px 0px;
+    background-color: #f8f9fb;
+}
+
+.mobile-icons-container {
+    display: none;
 }
 
 .icons-container div {
@@ -161,7 +266,8 @@ ul li {
 }
 
 /* CSS the restaurants by Samiha */
-.div3 {
+
+.restaurant-container {
     padding-bottom: 138px;
     margin: 101px 0px;
     padding: 60px 0px;
@@ -292,18 +398,17 @@ ul li {
 
 .our-menu-container:before {
     content: "";
-    left: 0;
-    height: 780px;
-    width: 150%;
+    height: 870px;
+    width: 106%;
     position: absolute;
-    top: 390%;
+    top: 394%;
     background-color: #f8f9fb;
-    -webkit-transform: rotate(-5deg);
-    -moz-transform: rotate(-5deg);
     transform: rotate(-5deg);
     z-index: -1;
-    left: -58px;
+    left: -42px;
 }
+
+
 
 hr {
     border: 1px;
@@ -462,15 +567,17 @@ hr {
 
 .blog-container:before {
     content: "";
-    height: 750px;
-    width: 150%;
+    height: 742px;
+    width: 106%;
     position: absolute;
-    top: 600%;
+    top: 610%;
     background-color: #f8f9fb;
     transform: rotate(-5deg);
     z-index: -1;
-    left: -45px;
+    left: -41px;
 }
+
+
 
 .blog-container {
     background-color: #f8f9fb;
@@ -664,27 +771,188 @@ input[type="email"] {
         display: none;
     }
 
-    .header-container nav {
+    .nav-desktop {
         display: none;
     }
 
- 
-    .burger-menu {
-        display: block;
-    }
-    .nav-links:active{
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #ed7231;
-        width: 100px;
-        padding: 20px;
-        z-index: 1;
+    .header-container {
+
+        height: 225px;
+
 
     }
-    .nav-links:active ul{
-        text-align: center;
+
+    .header-container img {
+        clip-path: polygon(0 0, 0% 0%, 0% 100%, 236% 0%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        height: inherit;
+
+
+
+
+    }
+
+    .header-container:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -17%;
+
+        width: 100%;
+        height: 100%;
+        background-color: #4545a0;
+        clip-path: polygon(100% 100%, 100% 100%, 0% 83%, 100% 38%);
+    }
+
+
+
+    .header-slider-texts {
+        padding-block-start: 5px;
+    }
+
+    .header-slider-texts h1 {
+        font-size: 25px;
+    }
+
+    .header-slider-texts button {
+        border: 2px solid white;
+        padding: 3px;
+
+    }
+
+    .header-slider-texts p {
+        display: none;
+    }
+
+
+
+    .icons-container {
+        padding: 0px;
+
+    }
+
+    .icons-container::before {
+        display: none;
+    }
+
+    .icons-container::after {
+        display: none;
+    }
+
+    .our-menu-container:before {
+        display: none;
+    }
+
+    .blog-container:before {
+        display: none;
+    }
+
+    .icons-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .icons-block1,
+    .icons-block2,
+    .icons-block3,
+    .icons-block4 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 9px;
+        align-items: center;
+        margin: 5px 10px;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .icons-container p {
+        font-size: 9px;
+        font-weight: 400;
+
+    }
+
+    .icons-container h6 {
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+
+    .icons {
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .icons-container div {
+        padding: 11px 11px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+
+    /*  burger menu */
+    .burger-menu {
+        background-color: transparent;
+
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .burger-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .line {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        background-color: transparent;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 325px;
+        z-index: 1;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        margin: 10px 1px;
+    }
+
+    .menu ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
     }
 
 
 }
+
+/*  */

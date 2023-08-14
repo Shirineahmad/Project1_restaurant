@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant</title>
   <link rel="stylesheet" href="home.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,45 +12,64 @@
 </head>
 
 <body>
+
   <!-- HTML header by Shirin -->
   <div class="header-container">
+  <img src="./header-images/main-slider1.jpg" class="mySlides fade" alt="" style="width: 100%;">
+      <img src="./header-images/main-slider1.jpg"  class="mySlides fade" style="width: 100%;">
+    
+   
+    
+    
+    
+
     <header class="header">
       <h1 class="header-logo">FOODY</h1>
 
-      <nav>
+      <nav class="nav-desktop">
         <ul>
           <li><a class="header-home-button">Home</a></li>
-          <!-- <li><a>Recipes</a></li>
-          <li><a>Services</a></li> -->
           <li><a>About Us</a></li>
           <li><a>Contact Us</a></li>
         </ul>
       </nav>
-      <!-- burger menu -->
-       <div class="burger-menu" >
-         
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-        
 
+      <!-- burger menu -->
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      <nav class="nav-links">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#"> Contact Us</a></li>
-         
-        </ul>
-      </nav> 
       <!--  -->
       <button class="header-contact-button">CONTACT US</button>
     </header>
-
+    <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
     <div class="header-slider-texts">
       <h1>DELICIOUS FOOD</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       <button>GET STARTED</button>
     </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    
+  </div>
+
+  </div>
   </div>
 
   <!-- HTML icons by Leslie -->
@@ -63,8 +82,9 @@
       <h6>ENJOY EATING</h6>
 
       <p>
-        A small river named Duden flows by <br> their place and supplies it with
-        the <br> necessary regelialia.
+        A small river named Duden flows by
+        their place and supplies it with the
+        necessary regelialia.
       </p>
     </div>
     <div class="icons-block2">
@@ -101,7 +121,56 @@
 
     <div class="empty"></div>
   </div>
+  <!-- html icons for mobile by shirin -->
+  <!-- <div class="mobile-icons-container">
+ 
 
+  <div class="icons-block1">
+    <img src="./SVG/plate.svg" alt="plate-icon" class="icons" />
+
+    <h6>ENJOY EATING</h6>
+
+    <p class="icons-text">
+      A small river named Duden flows by
+      their place and supplies it with the  
+      necessary regelialia.
+    </p>
+  </div>
+  <div class="icons-block2">
+    <img src="./SVG/fish.svg" alt="fish_icon" class="icons" />
+
+    <h6>FRESH SEA FOODS</h6>
+
+    <p class="icons-text">
+      A small river named Duden flows by 
+      their place and supplies it with the
+      necessary regelialia.
+    </p>
+  </div>
+  <div class="icons-block3">
+    <img src="./SVG/coffee.svg" alt="coffee_icon" class="icons" />
+
+    <h6>CUP OF COFFEE</h6>
+
+    <p class="icons-text">
+      A small river named Duden flows by 
+      their place and supplies it with the
+      necessary regelialia.
+    </p>
+  </div>
+  <div class="icons-block4">
+    <img src="./SVG/meat.svg" alt="meat_icon" class="icons" />
+
+    <h6>MEAT EATERS</h6>
+
+    <p class="icons-text">
+      A small river named Duden flows by their place and supplies it with
+      the necessary regelialia.
+    </p>
+  </div>
+
+ 
+</div> -->
   <!-- HTML the restaurant by Samiha -->
 
   <div class="restaurant-container">
@@ -170,7 +239,7 @@
       </div>
       <div class="our-menu-grid-item grid-menu-caesar"></div>
 
-      <div class="grid-item our-menu-grid-text">
+      <div class="our-menu-grid-item our-menu-grid-text">
         <h4 class="our-menu-dishes">Bacon wrapped wild gulf prawns</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -210,7 +279,7 @@
       </div>
       <div class="our-menu-grid-item grid-menu-caesar"></div>
 
-      <div class="grid-item our-menu-grid-text">
+      <div class="our-menu-grid-item our-menu-grid-text">
         <h4 class="our-menu-dishes">Bacon wrapped wild gulf prawns</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
