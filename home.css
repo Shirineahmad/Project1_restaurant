@@ -151,7 +151,7 @@ body {
 }
 
 .header-contact-button {
-  width: 8%;
+  width: 10%;
   background-color: #ed7231;
   color: white;
   border: none;
@@ -188,31 +188,6 @@ ul li {
 }
 
 /*CSS icons by Leslie */
-/*.icons-container:after {
-  content: "";
-  left: 0;
-  height: 158px;
-  width: 104%;
-  position: absolute;
-  top: 144%;
-  background-color: #f8f9fb;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  transform: rotate(-5deg);
-  left: -45px;
-}*/
-
-/*.icons-container::after {
-  content: "";
-  position: absolute;
-  background-color: #f8f9fb;
-  top: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 100%;
-  clip-path: polygon(100% 84%, 0% 100%, 100% 100%);
-}*/
-
 .icons-container {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
@@ -297,20 +272,8 @@ ul li {
 .special-menu-container {
   display: flex;
   flex-direction: column;
-  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
   padding-bottom: 120px;
 }
-
-/*.special-menu-container:after {
-  clip-path: polygon(100% 84%, 0% 100%, 100% 100%);
-  background-color: yellow;
-  content: "";
-  position: absolute;
-  top: 0%;
-  bottom: 0%;
-  width: 100%;
-  height: 100%;
-}*/
 
 .special-menu {
   display: flex;
@@ -388,10 +351,21 @@ ul li {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 720px;
-  clip-path: polygon(100% 84%, 0% 100%, 100% 100%);
-  background-color: pink;
+  padding-top: 146px;
+  clip-path: polygon(0% 16%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #f8f9fb;
   padding-bottom: 120px;
+  position: relative;
+}
+
+.our-menu-container:after {
+  content: "";
+  clip-path: polygon(0 84%, 100% 0, 100% 100%, 0 100%);
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background-color: white;
 }
 
 hr {
@@ -483,6 +457,9 @@ hr {
   align-items: center;
   margin-bottom: 199px;
   row-gap: 60px;
+  padding-top: 146px;
+
+
 }
 
 .testimonial-container hr {
@@ -547,21 +524,26 @@ hr {
 }
 
 /* CSS blog by Samiha */
-.blog-container:before {
-  content: "";
-  height: 742px;
-  width: 106%;
-  position: absolute;
-  top: 691%;
-  background-color: #f8f9fb;
-  transform: rotate(-5deg);
-  z-index: -1;
-  left: -41px;
-}
 
 .blog-container {
+  clip-path: polygon(0% 16%, 100% 0%, 100% 100%, 0% 100%);
   background-color: #f8f9fb;
-  margin-bottom: 20px;
+  padding-bottom: 220px;
+  padding-top: 100px;
+  position: relative;
+
+
+}
+
+.blog-container::after {
+  content: "";
+  clip-path: polygon(0 84%, 100% 0, 100% 100%, 0 100%);
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background-color: #FFFFFF;
+
 }
 
 .blog-container h1 {
@@ -569,6 +551,7 @@ hr {
   font-size: 30px;
   font-weight: 800;
   padding-bottom: 15px;
+
 }
 
 .blog-part {
@@ -848,58 +831,6 @@ input[type="email"] {
     padding: 0px;
   }
 
-  .icons-container::after {
-    top: 66%;
-    left: 0%;
-    width: 100%;
-    height: 38px
-  }
-
-  .our-menu-container:before {
-    height: 170px;
-    background-color: #f8f9fb;
-    top: 280%;
-    left: -5px;
-  }
-
-  .our-menu-container:after {
-    content: "";
-    height: 53px;
-    width: 100%;
-    position: absolute;
-    top: 365%;
-    transform: rotate(0deg);
-    background-color: #f8f9fb;
-    /* transform: rotate(-5deg); */
-    z-index: -1;
-    clip-path: polygon(0 0, 0% 0%, 0% 100%, 124% 0%);
-  }
-
-  .blog-container:before {
-    height: 253px;
-    top: 386%;
-    left: 0px;
-    width: 100%;
-    transform: inherit;
-    background-color: #f8f9fb;
-    clip-path: polygon;
-    clip-path: polygon(0% 97%, 0% 100%, 100% 100%, 237% 0%);
-  }
-
-  .blog-container::after {
-    content: "";
-    height: 53px;
-    width: 100%;
-    position: absolute;
-    top: 530%;
-    transform: rotate(0deg);
-    background-color: #f8f9fb;
-    /* transform: rotate(-5deg); */
-    z-index: -1;
-    clip-path: polygon(0 0, 0% 0%, 0% 100%, 124% 0%);
-
-  }
-
   .icons-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -942,7 +873,13 @@ input[type="email"] {
     padding: 11px 11px;
   }
 
+
+
   /* Responsive the restaurant and special menu by Leslie */
+  .restaurant-container {
+    margin: 0px;
+  }
+
   .restaurant-container p {
     width: 85%;
   }
@@ -975,10 +912,12 @@ input[type="email"] {
 
   .special-menu-container {
     margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 
   .our-menu-container {
     margin: 42px 0px;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   }
 
   /* Responsive our menu by Leslie */
@@ -1013,6 +952,7 @@ input[type="email"] {
   .testimonial-container {
     margin-bottom: 0px;
     row-gap: 30px;
+    padding-top: 0px;
   }
 
   .testimonial-text {
@@ -1038,6 +978,12 @@ input[type="email"] {
 
   .blog-block br {
     display: none;
+  }
+
+  .blog-container {
+    padding-bottom: 100px;
+    clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 100%);
+
   }
 
   /* Responsive newsletter and footer by Leslie */
@@ -1081,6 +1027,15 @@ input[type="email"] {
     width: 12%;
   }
 
+  .icons-container {
+    height: 260px;
+
+  }
+
+  .restaurant-container {
+    margin: 0px;
+  }
+
   .restaurant-collage {
     display: flex;
     flex-wrap: nowrap;
@@ -1094,6 +1049,15 @@ input[type="email"] {
     display: none;
   }
 
+  .our-menu-container {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .testimonial-container {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .blog-block {
     transform: scale(0.9);
   }
@@ -1103,12 +1067,16 @@ input[type="email"] {
   }
 
   .blog-container {
-    margin-bottom: -100px;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    padding-bottom: 200px;
   }
+    .subscribe-container{
+      margin-top: 0px;
+    }
 
-  /* Responsive cuts */
 
-  .icons-container {
-    height: 260px;
-  }
+
+
+
+
 }
