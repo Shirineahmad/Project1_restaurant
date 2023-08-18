@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no">
-  <title>Restaurant</title>
+  <title>Foody - Home</title>
   <link rel="stylesheet" href="home.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,8 @@
   <!-- HTML header by Shirin -->
   <div class="header-container">
     <img src="./header-images/main-slider1.jpg" class="mySlides fade" alt="" style="width: 100%;">
-    <img src="./header-images/main-slider1.jpg" class="mySlides fade" style="width: 100%;">
+    <img src="./header-images/main-slider2.jpg" class="mySlides fade" style="width: 100%;">
+    <img src="./header-images/main-slider3.jpg" class="mySlides fade" style="width: 100%;">
 
     <header class="header">
       <h1 class="header-logo">FOODY</h1>
@@ -60,6 +61,7 @@
     <div style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
   </div>
@@ -147,26 +149,44 @@
     <hr>
     <h1>SPECIAL MENU</h1>
 
-    <div class="special-menu">
+    <div class="special-menu carousel-menu">
 
-      <div class="special-menu-item special-menu-1">
+      <div class="special-menu-item special-menu-1 fade-menu">
         <p class="special-menu-prices">$11.50</p>
         <p class="special-menu-dishes">ORGANIC TOMATO SALAD</p>
       </div>
 
-      <div class="special-menu-item special-menu-2">
+      <div class="special-menu-item special-menu-2 fade-menu">
         <p class="special-menu-prices">$12.00</p>
         <p class="special-menu-dishes">BAKED BROCCOLI</p>
       </div>
 
-      <div class="special-menu-item special-menu-3">
+      <div class="special-menu-item special-menu-3 fade-menu">
         <p class="special-menu-prices">$11.00</p>
         <p class="special-menu-dishes">SPICY MEATBALLS</p>
       </div>
 
+      <div class="special-menu-item special-menu-4 fade-menu">
+        <p class="special-menu-prices">$11.00</p>
+        <p class="special-menu-dishes">EGGPLANT PARMIGIANA</p>
+      </div>
+
     </div>
 
+    <!--  No need for arrows nor dots
+
+  <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button> 
+ 
+    <div style="text-align:center">
+      <span class="dot-menu" onclick="currentSlideMenu(1)"></span>
+      <span class="dot-menu" onclick="currentSlideMenu(2)"></span>
+      <span class="dot-menu" onclick="currentSlideMenu(3)"></span>
+      <span class="dot-menu" onclick="currentSlideMenu(4)"></span>
+    </div>
   </div>
+
+   -->
 
   <!-- HTML our menu by Leslie -->
   <div class="our-menu-container">

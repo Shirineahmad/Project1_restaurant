@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable= no">
+  <title>About Us</title>
+  <link rel="stylesheet" href="home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HTML header by Shirin -->
+  <div class="header-container">
+    <img src="./header-images/main-slider1.jpg" class="mySlides fade" alt="" style="width: 100%;">
+    <img src="./header-images/main-slider2.jpg" class="mySlides fade" style="width: 100%;">
+    <img src="./header-images/main-slider3.jpg" class="mySlides fade" style="width: 100%;">
+
+    <header class="header">
+      <h1 class="header-logo">FOODY</h1>
+
+      <nav class="nav-desktop">
+        <ul>
+          <li><a class="header-home-button">Home</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- HTML burger menu by Shirin -->
+      <div class="burger-menu">
+        <div class="burger-icon" id="burger-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="menu" id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--  HTML sliders by Shirin -->
+      <button class="header-contact-button">CONTACT US</button>
+    </header>
+    <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="header-slider-texts">
+      <h1>DELICIOUS FOOD</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <button>GET STARTED</button>
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+
+  <!-- HTML the restaurant by Samiha -->
+  <div class="restaurant-container">
+    <hr>
+    <h1>THE RESTAURANT</h1>
+    <p>
+      Far far away, behind the word mountains, far from the countries Vokalia
+      and Consonantia, there live the blind texts. Separated they live in
+      Bookmarksgrove right at the coast of the Semantics, a large language
+      ocean.
+    </p>
+
+    <div class="restaurant-collage">
+      <img src="./the-restaurant-images/restaurant-image1.jpg" class="collage-image" alt="yummy dish" />
+
+      <div class="collage-duo">
+        <img src="./the-restaurant-images/the-restaurant-image2.jpg" class="collage-image" alt="yummy dish" />
+        <img src="./the-restaurant-images/the-restaurant-image3.jpg" class="collage-image" alt="yummy dish" />
+      </div>
+
+      <img src="./the-restaurant-images/the-restaurant-image4.jpg" class="collage-image fourth-picture"
+        alt="yummy dish" />
+    </div>
+  </div>
+
+
+
+  <!-- HTML footer by Shirin -->
+  <div class="subscribe-container">
+    <h3>Subscribe to our Newsletter</h3>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex
+      temporibus magni ipsum inventore dolorum sunt, amen vel.
+
+    </p>
+    <div class="subscribe-mail-input">
+      <input type="email" placeholder="Enter Email Address" class="subscribe-input" />
+      <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+    </div>
+  </div>
+
+  <div class="before-footer">
+    <div class="footer-container">
+
+      <div class="footer-part1">
+        <h6>About Us</h6>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          Quasi eaque modi commodi voluptate <br />
+          Reprehenderit quis aperia.<br />
+        </p>
+
+        <div class="footer-icons">
+          <img src="./SVG/twitter.svg" alt="Twitter" />
+          <img src="./SVG/facebook.svg" alt="Facebook" />
+          <img src="./SVG/linkedin.svg" alt="Linked in" />
+          <img src="./SVG/instagram.svg" alt="Instagram" />
+        </div>
+      </div>
+      <div class="footer-part2">
+        <h6>Opening Hours</h6>
+        <div class="footer-opening-hours">
+          <p class="footer-black-text">Sunday-Thursday</p>
+          <p class="footer-gray-text">5AM-10PM</p>
+        </div>
+        <div class="footer-contact-info">
+          <h6>Contact Info</h6>
+          <div>
+            <p class="footer-black-text">Address</p>
+            <p class="footer-gray-text">34 Street Name, City Name Here, United State</p>
+          </div>
+          <div>
+            <p class="footer-black-text">Phone:</p>
+            <p class="footer-gray-text">+1 467 3774 898</p>
+          </div>
+          <div>
+            <p class="footer-black-text">Email:</p>
+            <p class="footer-gray-text">info@yourdomain.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-part3">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Terms of Use</a></li>
+          <li><a class="footer-link" href="#">Disclaimers</a></li>
+          <li><a class="footer-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- HTML footer for mobile by Leslie -->
+  <div class="mobile-before-footer">
+    <div class="footer-container">
+
+      <div class="footer-part2">
+        <h6>Opening Hours</h6>
+        <div class="footer-opening-hours">
+          <p class="footer-black-text">Sunday-Thursday</p>
+          <p class="footer-gray-text">5AM-10PM</p>
+        </div>
+        <div class="footer-contact-info">
+          <h6>Contact Info</h6>
+          <div>
+            <p class="footer-black-text">Address</p>
+            <p class="footer-gray-text">34 Street Name, City Name Here, United State</p>
+          </div>
+          <div>
+            <p class="footer-black-text">Phone:</p>
+            <p class="footer-gray-text">+1 467 3774 898</p>
+          </div>
+          <div>
+            <p class="footer-black-text">Email:</p>
+            <p class="footer-gray-text">info@yourdomain.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-part3">
+        <h6>Quick Links</h6>
+        <ul>
+          <li><a class="footer-link" href="#">About</a></li>
+          <li><a class="footer-link" href="#">Terms of Use</a></li>
+          <li><a class="footer-link" href="#">Disclaimers</a></li>
+          <li><a class="footer-link" href="#">Contact</a></li>
+        </ul>
+
+        <div class="footer-icons">
+          <img src="./SVG/twitter.svg" alt="Twitter" />
+          <img src="./SVG/facebook.svg" alt="Facebook" />
+          <img src="./SVG/linkedin.svg" alt="Linked in" />
+          <img src="./SVG/instagram.svg" alt="Instagram" />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <span class="copyright-span">Copyright &copy;2023 All rights reserved</span>
+</body>
+
+<script src="home.js"></script>
+
+</html>

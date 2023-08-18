@@ -277,6 +277,23 @@ ul li {
 
 .special-menu {
   display: flex;
+  transition: transform 0.5s;
+}
+
+.carousel-menu {
+  width: 150%;
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.special-menu-item {
+  width: 25%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .special-menu-container h1 {
@@ -292,6 +309,17 @@ ul li {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  display: flex;
+  transition: 0.3s all ease;
+}
+
+.special-menu-item:hover {
+  transform: scale(1.05);
+}
+
+.special-menu-item:hover .special-menu-prices {
+  background-color: transparent;
+  border: 2px #ffffff solid;
 }
 
 .special-menu-1 {
@@ -321,6 +349,15 @@ ul li {
   background-position: center;
 }
 
+.special-menu-4 {
+  background-image: url(./special-menu-images/4special-menu.png);
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-position: center;
+}
+
 .special-menu-prices {
   color: #FFFFFF;
   background-color: #ed7231;
@@ -342,6 +379,43 @@ ul li {
   margin: 0;
   top: 50%;
 }
+
+/* CSS sliders special menu */
+
+.dot-menu {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-menu,
+.dot-menu:hover {
+  background-color: #717171;
+}
+
+/*.active-slide {
+  display: flex;
+}
+
+.fade-menu {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade-menu {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}*/
 
 /* CSS our menu by Leslie */
 .our-menu-container {
@@ -458,8 +532,6 @@ hr {
   margin-bottom: 199px;
   row-gap: 60px;
   padding-top: 146px;
-
-
 }
 
 .testimonial-container hr {
@@ -531,8 +603,6 @@ hr {
   padding-bottom: 220px;
   padding-top: 100px;
   position: relative;
-
-
 }
 
 .blog-container::after {
@@ -543,7 +613,6 @@ hr {
   width: 100%;
   position: absolute;
   background-color: #FFFFFF;
-
 }
 
 .blog-container h1 {
@@ -551,7 +620,6 @@ hr {
   font-size: 30px;
   font-weight: 800;
   padding-bottom: 15px;
-
 }
 
 .blog-part {
@@ -873,8 +941,6 @@ input[type="email"] {
     padding: 11px 11px;
   }
 
-
-
   /* Responsive the restaurant and special menu by Leslie */
   .restaurant-container {
     margin: 0px;
@@ -915,12 +981,17 @@ input[type="email"] {
     padding-bottom: 0px;
   }
 
+  .carousel-menu {
+    transition: none;
+    width: 100%;
+  }
+
+  /* Responsive our menu by Leslie */
   .our-menu-container {
     margin: 42px 0px;
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
   }
 
-  /* Responsive our menu by Leslie */
   .our-menu-grid {
     display: grid;
     grid-template-columns: repeat(2, 140px);
@@ -948,7 +1019,6 @@ input[type="email"] {
     }*/
 
   /* Responsive testimonial and blog by Leslie */
-
   .testimonial-container {
     margin-bottom: 0px;
     row-gap: 30px;
@@ -983,7 +1053,6 @@ input[type="email"] {
   .blog-container {
     padding-bottom: 100px;
     clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 100%);
-
   }
 
   /* Responsive newsletter and footer by Leslie */
@@ -1029,7 +1098,6 @@ input[type="email"] {
 
   .icons-container {
     height: 260px;
-
   }
 
   .restaurant-container {
@@ -1070,13 +1138,24 @@ input[type="email"] {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
     padding-bottom: 200px;
   }
-    .subscribe-container{
-      margin-top: 0px;
-    }
 
+  .subscribe-container {
+    margin-top: 0px;
+  }
+}
 
+/* RESPONSIVE on 11'*/
+@media screen and (min-width:821px) and (max-width:1366px) {
+  .restaurant-container {
+    margin: 0px;
+  }
 
+  .testimonial-container {
+    padding-top: 80px;
+    margin-bottom: 100px;
+  }
 
-
-
+  .subscribe-container {
+    margin-top: 0px;
+  }
 }
