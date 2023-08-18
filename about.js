@@ -36,24 +36,21 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Special menu sliders
+// FAQ 
 
-const carouselContainer = document.querySelector('.special-menu-container');
-const carousel = document.querySelector('.carousel-menu');
+const faqQuestions = document.querySelectorAll('.faq-question');
 
-carouselContainer.addEventListener('mouseenter', () => {
-  carousel.style.animation = 'none';
-});
+faqQuestions.forEach(function (question) { 
+  question.addEventListener('click', () => {
+    const answer = question.nextElementSibling;
 
-carouselContainer.addEventListener('mouseleave', () => {
-  carousel.style.animation = '';
-});
+    answer.classList.toggle('show');
 
-carouselContainer.addEventListener('mousemove', (e) => {
-  const containerWidth = carouselContainer.clientWidth;
-  const carouselWidth = carousel.clientWidth;
-  const mouseX = e.clientX - carouselContainer.getBoundingClientRect().left;
-  const offsetX = (mouseX / containerWidth) * (carouselWidth - containerWidth);
-  
-  carousel.style.transform = `translateX(-${offsetX}px)`;
+    faqQuestions.forEach(otherQuestion => {
+      if (otherQuestion !== question) {
+        const otherAnswer = otherQuestion.nextElementSibling;
+        otherAnswer.classList.remove('show');
+      }
+    });
+  });
 });
