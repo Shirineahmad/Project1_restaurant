@@ -1,4 +1,3 @@
-/* CSS header by Shirin */
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +9,13 @@ body {
   font-display: swap;
 }
 
+/* CSS header by Shirin */
 .burger-menu {
   display: none;
 }
 
 .header-container {
   background-size: cover;
-
   height: 525px;
   background-position: center;
   position: relative;
@@ -150,11 +149,22 @@ body {
   color: white;
 }
 
+.header-home-nav {
+  color: #ed7231;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-contact-button {
   width: 10%;
   background-color: #ed7231;
-  color: white;
   border: none;
+}
+
+.header-contact-button a {
+  color: white;
 }
 
 .header-slider-texts h1,
@@ -174,10 +184,6 @@ ul li {
   padding: 0px;
   text-decoration: none;
   list-style-type: none;
-}
-
-.header-home-button {
-  color: #ed7231;
 }
 
 .header-slider-texts button {
@@ -397,25 +403,6 @@ ul li {
 .dot-menu:hover {
   background-color: #717171;
 }
-
-/*.active-slide {
-  display: flex;
-}
-
-.fade-menu {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade-menu {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}*/
 
 /* CSS our menu by Leslie */
 .our-menu-container {
@@ -687,7 +674,7 @@ hr {
   margin-bottom: 12px;
 }
 
-/* CSS footer by Shirin*/
+/* CSS footer by Shirin */
 .subscribe-container {
   display: flex;
   flex-direction: column;

@@ -36,24 +36,3 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// Special menu sliders
-
-const carouselContainer = document.querySelector('.special-menu-container');
-const carousel = document.querySelector('.carousel-menu');
-
-carouselContainer.addEventListener('mouseenter', () => {
-  carousel.style.animation = 'none';
-});
-
-carouselContainer.addEventListener('mouseleave', () => {
-  carousel.style.animation = '';
-});
-
-carouselContainer.addEventListener('mousemove', (e) => {
-  const containerWidth = carouselContainer.clientWidth;
-  const carouselWidth = carousel.clientWidth;
-  const mouseX = e.clientX - carouselContainer.getBoundingClientRect().left;
-  const offsetX = (mouseX / containerWidth) * (carouselWidth - containerWidth);
-  
-  carousel.style.transform = `translateX(-${offsetX}px)`;
-});

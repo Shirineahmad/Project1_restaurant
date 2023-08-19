@@ -1,4 +1,3 @@
-/* CSS header by Shirin */
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +9,13 @@ body {
   font-display: swap;
 }
 
+/* CSS header by Shirin */
 .burger-menu {
   display: none;
 }
 
 .header-container {
   background-size: cover;
-
   height: 525px;
   background-position: center;
   position: relative;
@@ -150,11 +149,22 @@ body {
   color: white;
 }
 
+.header-about-nav {
+  color: #ed7231;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-contact-button {
   width: 10%;
   background-color: #ed7231;
-  color: white;
   border: none;
+}
+
+.header-contact-button a {
+  color: white;
 }
 
 .header-slider-texts h1,
@@ -176,10 +186,6 @@ ul li {
   list-style-type: none;
 }
 
-.header-home-button {
-  color: #ed7231;
-}
-
 .header-slider-texts button {
   border: 2px solid white;
   background-color: transparent;
@@ -187,11 +193,11 @@ ul li {
   padding: 6px;
 }
 
-/* CSS the restaurants by Samiha */
+/* CSS the restaurant by Samiha */
 .restaurant-container {
   padding-bottom: 138px;
-  margin: 101px 0px;
   padding: 60px 0px;
+  background-color: #f8f9fb;
 }
 
 .restaurant-container hr {
@@ -239,6 +245,12 @@ ul li {
 }
 
 /* CSS meet the team by Leslie */
+.meet-the-team-container {
+  background-color: #f8f9fb;
+  clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+  padding-bottom: 185px;
+}
+
 .meet-the-team-container hr {
   border: 1px;
   background-color: #ed7231;
@@ -285,6 +297,10 @@ ul li {
 }
 
 /* CSS find us by Leslie */
+.find-us-container {
+  padding-bottom: 100px;
+}
+
 .find-us-container hr {
   border: 1px;
   background-color: #ed7231;
@@ -315,7 +331,7 @@ ul li {
   position: relative;
   text-align: right;
   width: 85%;
-  height: 400px;
+  height: 410px;
   margin: auto;
 }
 
@@ -327,6 +343,24 @@ ul li {
 }
 
 /* CSS FAQ by Leslie */
+.faq-container {
+  clip-path: polygon(0% 16%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #f8f9fb;
+  padding-top: 80px;
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.faq-container::after {
+  content: "";
+  clip-path: polygon(0 84%, 100% 0, 100% 100%, 0 100%);
+  bottom: 0;
+  height: 200px;
+  width: 300%;
+  position: absolute;
+  background-color: #FFFFFF;
+}
+
 .faq-container hr {
   border: 1px;
   background-color: #ed7231;
@@ -340,7 +374,7 @@ ul li {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  padding-bottom: 15px;
+  padding-bottom: 50px;
   margin: auto;
 }
 
@@ -378,12 +412,12 @@ ul li {
   color: #adb0b7;
 }
 
-/* CSS footer by Shirin*/
+/* CSS footer by Shirin */
 .subscribe-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 270px;
+  margin-top: 50px;
 }
 
 .subscribe-container p {
