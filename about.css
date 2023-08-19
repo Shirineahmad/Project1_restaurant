@@ -153,6 +153,11 @@ body {
   color: #ed7231;
 }
 
+.header-contact-nav,
+.header-home-nav {
+  color: #FFFFFF;
+}
+
 a {
   text-decoration: none;
 }
@@ -242,6 +247,10 @@ ul li {
 .collage-duo {
   display: inherit;
   flex-direction: column;
+}
+
+.restaurant-text-under-pictures {
+  padding: 35px 0px;
 }
 
 /* CSS meet the team by Leslie */
@@ -619,9 +628,10 @@ input[type="email"] {
     display: none;
   }
 
-  /* Responsive the restaurant and special menu by Leslie */
+  /* Responsive the restaurant by Leslie */
   .restaurant-container {
     margin: 0px;
+    padding: 20px 0px;
   }
 
   .restaurant-container p {
@@ -641,9 +651,63 @@ input[type="email"] {
     display: none;
   }
 
+  /* Responsive meet the team by Leslie */
+  .meet-the-team-container {
+    padding-top: 30px;
+  }
+
+  .meet-the-team-text {
+    width: auto;
+    padding-bottom: 0px;
+  }
+
+  .meet-the-team-chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meet-chef-picture {
+    margin: 0px;
+    transform: scale(0.8);
+  }
+
+  .meet-the-team-container {
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0% 100%);
+    padding-bottom: 100px;
+  }
+
+  /* Responsive find us by Leslie */
+  .find-us-container {
+    padding: 50px 0px;
+  }
+
+  .find-us-container p {
+    width: auto;
+  }
+
+  /* Responsive faq by Leslie */
+  .faq-container {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .faq-container::after {
+    clip-path: polygon(0 96%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .faq-content {
+    width: 85%;
+    margin: auto;
+  }
+
   /* Responsive newsletter and footer by Leslie */
+  .subscribe-container p {
+    padding: 20px;
+  }
+
   input[type="email"] {
     width: 200px;
+    border: 2px solid darkgray;
   }
 
   .before-footer {
@@ -699,10 +763,32 @@ input[type="email"] {
     display: none;
   }
 
+  .meet-the-team-chefs {
+    transform: scale(0.9);
+  }
+
+  .meet-the-team-container {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    padding-bottom: 100px;
+  }
+
+  .faq-container {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .faq-container::after {
+    clip-path: polygon(0 90%, 100% 0, 100% 100%, 0 100%);
+  }
 
   .subscribe-container {
     margin-top: 0px;
   }
+
+  .before-footer {
+    padding: 0px 65px;
+    padding-top: 75px;
+  }
+
 }
 
 /* RESPONSIVE on 11'*/

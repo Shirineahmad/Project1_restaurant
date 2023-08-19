@@ -153,6 +153,11 @@ body {
   color: #ed7231;
 }
 
+.header-about-nav,
+.header-contact-nav {
+  color: #FFFFFF;
+}
+
 a {
   text-decoration: none;
 }
@@ -386,24 +391,6 @@ ul li {
   top: 50%;
 }
 
-/* CSS sliders special menu */
-
-.dot-menu {
-  cursor: pointer;
-  height: 9px;
-  width: 9px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active-menu,
-.dot-menu:hover {
-  background-color: #717171;
-}
-
 /* CSS our menu by Leslie */
 .our-menu-container {
   align-content: center;
@@ -526,7 +513,7 @@ hr {
   background-color: #ed7231;
   color: #ed7231;
   height: 2px;
-  width: 32%;
+  width: 12%;
   margin: auto;
 }
 
@@ -1021,8 +1008,8 @@ input[type="email"] {
   }
 
   .testimonial-reviewer {
-    padding-left: 550px;
-    width: 100%;
+    padding: 0;
+    padding-bottom: 35px;
   }
 
   .blog-part {
@@ -1043,8 +1030,13 @@ input[type="email"] {
   }
 
   /* Responsive newsletter and footer by Leslie */
+  .subscribe-container p {
+    padding: 20px;
+  }
+
   input[type="email"] {
     width: 200px;
+    border: 2px solid darkgray;
   }
 
   .before-footer {
@@ -1128,6 +1120,11 @@ input[type="email"] {
 
   .subscribe-container {
     margin-top: 0px;
+  }
+
+  .before-footer {
+    padding: 0px 65px;
+    padding-top: 75px;
   }
 }
 

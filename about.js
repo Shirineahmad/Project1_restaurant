@@ -1,4 +1,4 @@
-// Burger menu 
+// Burger menu by Shirin 
 
 const burgerIcon = document.getElementById('burger-icon');
 const menu = document.getElementById('menu');
@@ -7,7 +7,7 @@ burgerIcon.addEventListener('click', function () {
     menu.classList.toggle('active');
 });
 
-// Header slider
+// Header slider by Shirin 
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -36,7 +36,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
-// FAQ 
+// FAQ by Leslie 
 
 const faqQuestions = document.querySelectorAll('.faq-question');
 

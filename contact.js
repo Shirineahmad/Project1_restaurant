@@ -7,7 +7,7 @@ burgerIcon.addEventListener('click', function () {
     menu.classList.toggle('active');
 });
 
-// Header slider
+// Header slider by Shirin 
 
 let slideIndex = 1;
 showSlides(slideIndex);
