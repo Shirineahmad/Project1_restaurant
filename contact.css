@@ -243,7 +243,7 @@ form {
   color: #FFFFFF;
   padding: 5px 0px;
   width: 150px;
-  border: none;
+  border: 1px solid #ed7231;
   text-transform: uppercase;
 }
 
