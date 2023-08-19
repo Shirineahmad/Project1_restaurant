@@ -49,3 +49,15 @@ carouselContainer.addEventListener('mousemove', (e) => {
   
   carousel.style.transform = `translateX(-${offsetX}px)`;
 });
+// testimoniol slider
+const carouselContainerTestimonial = document.querySelector('.testimonial-container');
+const carouselTestimonial = document.querySelector('.carousel-testimonial');
+
+carouselContainerTestimonial.addEventListener('mousemove', (e) => {
+    const containerTestimonialWidth = carouselContainerTestimonial.clientWidth;
+    const carouselTestimonialWidth = carouselContainer.clientWidth;
+    const mouseX = e.clientX - carouselContainerTestimonial.getBoundingClientRect().left;
+    const offsetX = (mouseX / containerTestimonialWidth) * (carouselTestimonialWidth - containerTestimonialWidth);
+
+    carouselContainer.style.transform = `translateX(-${offsetX}px)`;
+});

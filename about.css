@@ -152,6 +152,11 @@ body {
 .header-about-nav {
   color: #ed7231;
 }
+.header-contact-nav,
+.header-home-nav {
+  color: #FFFFFF;
+
+}
 
 a {
   text-decoration: none;
