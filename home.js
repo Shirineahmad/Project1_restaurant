@@ -50,14 +50,68 @@ carouselContainer.addEventListener('mousemove', (e) => {
   carousel.style.transform = `translateX(-${offsetX}px)`;
 });
 // testimoniol slider
-const carouselContainerTestimonial = document.querySelector('.testimonial-container');
-const carouselTestimonial = document.querySelector('.carousel-testimonial');
+// script.js
+let currentContent = 0;
+let isHovering = false; 
 
-carouselContainerTestimonial.addEventListener('mousemove', (e) => {
-    const containerTestimonialWidth = carouselContainerTestimonial.clientWidth;
-    const carouselTestimonialWidth = carouselContainer.clientWidth;
-    const mouseX = e.clientX - carouselContainerTestimonial.getBoundingClientRect().left;
-    const offsetX = (mouseX / containerTestimonialWidth) * (carouselTestimonialWidth - containerTestimonialWidth);
+function showContent(contentIndex) {
+    const contentWidth = document.querySelector('.carousel-container-testimonial').offsetWidth;
+    const dots = document.querySelectorAll('.dot-testimonial');
 
-    carouselContainer.style.transform = `translateX(-${offsetX}px)`;
+    currentContent = contentIndex;
+    const offset = -currentContent * contentWidth;
+    document.querySelectorAll('.carousel-testimonial').forEach(content => {
+        content.style.transition = 'transform 0.5s ease-in-out'; // Add fade transition
+        
+        content.style.transform = `translateX(${offset}px)`;
+    });
+    // setTimeout(() => {
+    //     document.querySelectorAll('.carousel-testimonial').forEach((content, index) => {
+    //         content.style.transition = `opacity ${index === currentContent ? 1 : 0.5}s`; // Adjust the duration as needed
+    //         content.style.opacity = index === currentContent ? 1 : 0; // Show/hide content with opacity
+       
+    //     });
+    // }, 1000); // Delay the opacity change slightly after the transition starts
+
+    dots.forEach((dot, index) => {
+        if (index === currentContent) {
+            dot.classList.add('active-testimonial');
+        } else {
+            dot.classList.remove('active-testimonial');
+        }
+    });
+}
+
+// Initial slide display
+// showContent(currentContent);
+
+// hover
+
+let currentHover = 0;
+
+function handleHoverAnimation(contentIndexHover) {
+    const carouselContainer = document.querySelector('.carousel-container-testimonial');
+    const carouselItems = document.querySelectorAll('.carousel-testimonial');
+
+    const carouselWidth = carouselContainer.offsetWidth;
+    const offsetHover = contentIndexHover * carouselWidth * -1;
+
+    carouselContainer.addEventListener('mouseenter', () => {
+        carouselItems.forEach(contentHover => {
+            contentHover.style.transition = 'transform 0.5s ease-in-out';
+            contentHover.style.transform = `translateX(${offsetHover}px)`;
+        });
+    });
+
+    carouselContainer.addEventListener('mouseleave', () => {
+        carouselItems.forEach(contentHover2 => {
+            contentHover2.style.transition = 'none';
+            contentHover2.style.transform = 'translateX(0)';
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showContent(currentHover);
+    handleHoverAnimation(currentHover);
 });
