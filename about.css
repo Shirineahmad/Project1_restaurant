@@ -736,7 +736,7 @@ input[type="email"] {
 }
 
 /* Resposive on phone size 428px */
-@media screen and (max-width:428px) {
+@media screen and (max-width:645px) {
   * {
     margin: 0;
     padding: 0;
@@ -917,14 +917,20 @@ input[type="email"] {
   }
 }
 
-.meet-the-team-container hr ,.find-us-container hr,.faq-container hr{
+.meet-the-team-container hr,
+.find-us-container hr,
+.faq-container hr,
+.restaurant-container hr {
   width: 15%;
 }
 
-.meet-the-team-text, .find-us-container p,.faq-item {
+.meet-the-team-text,
+.find-us-container p,
+.faq-item {
   width: 400px;
 }
-.faq-container h1{
+
+.faq-container h1 {
   padding-bottom: 40px;
 }
 
@@ -939,16 +945,19 @@ input[type="email"] {
   flex-direction: column;
   align-items: center;
 }
-.meet-the-team-name{
+
+.meet-the-team-name {
   padding: 5px 0px;
 }
+
 .meet-the-team-position {
   padding-bottom: 5px;
 }
 
-.faq-container{
-      clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+.faq-container {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
 }
+
 .carousel-menu {
   transition: none;
   width: 100%;
@@ -1009,7 +1018,7 @@ input[type="email"] {
 }
 
 /* RESPONSIVE on iPad */
-@media screen and (min-width:429px) and (max-width:820px) {
+@media screen and (min-width:646px) and (max-width:820px) {
   .header-logo {
     width: 13%;
     font-size: 18px;
@@ -1017,6 +1026,7 @@ input[type="email"] {
 
   .header-contact-button {
     width: 12%;
+    padding: 8px 2px;
   }
 
   .restaurant-container {

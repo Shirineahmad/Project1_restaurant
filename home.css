@@ -1065,12 +1065,23 @@ input[type="email"] {
 }
 
 /* Resposive on phone size 428px */
-@media screen and (max-width:428px) {
+@media screen and (max-width:645px) {
   * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
     box-sizing: border-box;
+  }
+
+  .restaurant-container hr,
+  .special-menu-container hr,
+  .our-menu-container hr,
+  .blog-container hr {
+    width: 15%;
+  }
+
+  .testimonial-container hr {
+    width: 30%;
   }
 
   /*  Responsive header by Shirin */
@@ -1261,7 +1272,8 @@ input[type="email"] {
     margin: 42px 0px;
     clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 100%);
   }
-  .our-menu-container:after{
+
+  .our-menu-container:after {
     clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
   }
 
@@ -1327,8 +1339,9 @@ input[type="email"] {
     padding-bottom: 100px;
     clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 100%);
   }
-  .blog-container:after{
-  clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+
+  .blog-container:after {
+    clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
   }
 
   /* Responsive newsletter and footer by Leslie */
@@ -1368,14 +1381,16 @@ input[type="email"] {
 
 
 /* RESPONSIVE on iPad */
-@media screen and (min-width:429px) and (max-width:820px) {
+@media screen and (min-width:646px) and (max-width:820px) {
   .header-logo {
     width: 13%;
     font-size: 18px;
   }
+   
 
   .header-contact-button {
     width: 12%;
+    padding: 8px 2px;
   }
 
   .icons-container {
