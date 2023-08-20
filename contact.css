@@ -388,7 +388,7 @@ input[type="email"] {
   display: flex;
 }
 
-/* RESPONSIVE on mobile */
+/* RESPONSIVE on mobile size 390px */
 @media screen and (max-width:390px) {
   * {
     margin: 0;
@@ -498,7 +498,7 @@ input[type="email"] {
   }
 
   .yourName,
-  .youreEmail,
+  .yourEmail,
   .yourMessage {
     width: 206px;
   }
@@ -547,7 +547,7 @@ input[type="email"] {
   }
 }
 
-/* Resposive on phone size 428px */
+/* Responsive on mobile size 428px */
 @media screen and (max-width:645px) {
   * {
     margin: 0;
@@ -647,7 +647,6 @@ input[type="email"] {
     display: none;
   }
 
-  /* contact responsive */
   /* Responsive contact form by Shirin */
   .contact-form {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
@@ -675,7 +674,6 @@ input[type="email"] {
     width: auto;
     padding: 5px 20px;
   }
-
 
   /* Responsive newsletter and footer by Leslie */
   .subscribe-container p {
@@ -739,7 +737,6 @@ input[type="email"] {
   input[type="email"] {
     border: 2px solid darkgrey;
   }
-
 
 .before-footer {
   padding: 0px 65px;

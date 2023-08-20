@@ -532,7 +532,7 @@ input[type="email"] {
   display: flex;
 }
 
-/* RESPONSIVE on mobile */
+/* RESPONSIVE on mobile size 390px*/
 @media screen and (max-width:390px) {
   * {
     margin: 0;
@@ -735,7 +735,7 @@ input[type="email"] {
   }
 }
 
-/* Resposive on phone size 428px */
+/* Responsive on mobile size 428px */
 @media screen and (max-width:645px) {
   * {
     margin: 0;
@@ -882,7 +882,7 @@ input[type="email"] {
     padding: 11px 11px;
   }
 
-  /* Responsive the restaurant and special menu by Leslie */
+  /* Responsive the restaurant by Leslie */
   .restaurant-container {
     margin: 0px;
   }
@@ -903,13 +903,6 @@ input[type="email"] {
   .fourth-picture {
     display: none;
   }
-
-  /* .special-menu {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
-    align-items: center;
-  } */
 
   .meet-the-team-container {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
@@ -962,26 +955,6 @@ input[type="email"] {
   transition: none;
   width: 100%;
 }
-
-/* Responsive our menu by Leslie */
-.our-menu-hidden-responsive {
-  display: none;
-}
-
-/* .rowtest:nth-child(7) {
-          grid-row:8 ; 
-      }
-      .rowtest:nth-child(8) {
-          grid-row: 7;
-      }
-      .rowtest:nth-child(2) {
-          grid-row: 3; 
-      }
-      .rowtest:nth-child(2) {
-          grid-row: 3;
-      }*/
-
-/* Responsive testimonial and blog by Leslie */
 
 /* Responsive newsletter and footer by Leslie */
 .subscribe-container p {
@@ -1071,7 +1044,6 @@ input[type="email"] {
     padding: 0px 65px;
     padding-top: 75px;
   }
-
 }
 
 /* RESPONSIVE on 11'*/
