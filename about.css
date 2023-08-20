@@ -735,8 +735,281 @@ input[type="email"] {
   }
 }
 
+/* Resposive on phone size 428px */
+@media screen and (max-width:428px) {
+  * {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+  /*  Responsive header by Shirin */
+  .burger-menu {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .burger-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .line {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 341px;
+    z-index: 1;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu ul li {
+    margin: 10px 1px;
+  }
+
+  .menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .header-logo {
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 3px;
+  }
+
+  .header-contact-button {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .header-logo {
+    width: 80%;
+  }
+
+  .header-container {
+    height: 225px;
+  }
+
+  .header-slider-texts {
+    padding-block-start: 5px;
+  }
+
+  .header-slider-texts h1 {
+    font-size: 25px;
+  }
+
+  .header-slider-texts button {
+    border: 2px solid white;
+    padding: 3px;
+  }
+
+  .header-slider-texts p {
+    display: none;
+  }
+
+  /*  Responsive icons  by Shirin */
+  .icons-container {
+    padding: 0px;
+  }
+
+  .icons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 85px;
+    height: 425px;
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+  }
+
+  .icons-block1,
+  .icons-block2,
+  .icons-block3,
+  .icons-block4 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+    align-items: center;
+    margin: 5px 10px;
+  }
+
+  .empty {
+    display: none;
+  }
+
+  .icons-container p {
+    font-size: 9px;
+    font-weight: 400;
+  }
+
+  .icons-container h6 {
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+
+  .icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icons-container div {
+    padding: 11px 11px;
+  }
+
+  /* Responsive the restaurant and special menu by Leslie */
+  .restaurant-container {
+    margin: 0px;
+  }
+
+  .restaurant-container p {
+    width: 85%;
+  }
+
+  .restaurant-collage {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .collage-image {
+    max-width: none;
+  }
+
+  .fourth-picture {
+    display: none;
+  }
+
+  /* .special-menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+  } */
+
+  .meet-the-team-container {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    padding-bottom: 90px;
+  }
+}
+
+.meet-the-team-container hr ,.find-us-container hr,.faq-container hr{
+  width: 15%;
+}
+
+.meet-the-team-text, .find-us-container p,.faq-item {
+  width: 400px;
+}
+.faq-container h1{
+  padding-bottom: 40px;
+}
+
+.meet-the-team-chefs {
+  flex-direction: column;
+}
+
+.meet-the-team-chef1,
+.meet-the-team-chef2,
+.meet-the-team-chef3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meet-the-team-name{
+  padding: 5px 0px;
+}
+.meet-the-team-position {
+  padding-bottom: 5px;
+}
+
+.faq-container{
+      clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+}
+.carousel-menu {
+  transition: none;
+  width: 100%;
+}
+
+/* Responsive our menu by Leslie */
+.our-menu-hidden-responsive {
+  display: none;
+}
+
+/* .rowtest:nth-child(7) {
+          grid-row:8 ; 
+      }
+      .rowtest:nth-child(8) {
+          grid-row: 7;
+      }
+      .rowtest:nth-child(2) {
+          grid-row: 3; 
+      }
+      .rowtest:nth-child(2) {
+          grid-row: 3;
+      }*/
+
+/* Responsive testimonial and blog by Leslie */
+
+/* Responsive newsletter and footer by Leslie */
+.subscribe-container p {
+  padding: 20px;
+}
+
+input[type="email"] {
+  width: 200px;
+  border: 2px solid darkgray;
+}
+
+.before-footer {
+  display: none;
+}
+
+.mobile-before-footer {
+  display: block;
+}
+
+.subscribe-container {
+  margin-top: 50px;
+}
+
+.footer-part2 {
+  row-gap: 10px;
+}
+
+.footer-contact-info {
+  row-gap: 10px;
+}
+
+.footer-icons {
+  padding-top: 25px;
+}
+
 /* RESPONSIVE on iPad */
-@media screen and (min-width:391px) and (max-width:820px) {
+@media screen and (min-width:429px) and (max-width:820px) {
   .header-logo {
     width: 13%;
     font-size: 18px;
