@@ -1244,7 +1244,7 @@ input[type="email"] {
       'tuna text4';
   }
 
-  .our-menu-grid-text1 {
+  .caesar1 {
     grid-area: text1;
   }
 
@@ -1252,7 +1252,7 @@ input[type="email"] {
     grid-area: caesar;
   }
 
-  .our-menu-grid-text2 {
+  .bacon2 {
     grid-area: text2;
   }
 
@@ -1264,7 +1264,7 @@ input[type="email"] {
     grid-area: calamari;
   }
 
-  .our-menu-grid-text3 {
+  .calamari3 {
     grid-area: text3;
   }
 
@@ -1272,7 +1272,7 @@ input[type="email"] {
     grid-area: tuna;
   }
 
-  .our-menu-grid-text4 {
+  .tuna4 {
     grid-area: text4;
   }
 
