@@ -980,7 +980,7 @@ input[type="email"] {
       'tuna text4';
   }
 
-  .our-menu-grid-text1 {
+  .caesar1 {
     grid-area: text1;
   }
 
@@ -988,7 +988,7 @@ input[type="email"] {
     grid-area: caesar;
   }
 
-  .our-menu-grid-text2 {
+  .bacon2 {
     grid-area: text2;
   }
 
@@ -1000,7 +1000,7 @@ input[type="email"] {
     grid-area: calamari;
   }
 
-  .our-menu-grid-text3 {
+  .calamari3 {
     grid-area: text3;
   }
 
@@ -1008,17 +1008,92 @@ input[type="email"] {
     grid-area: tuna;
   }
 
-  .our-menu-grid-text4 {
+  .tuna4 {
     grid-area: text4;
   }
 
   .our-menu-hidden-responsive {
     display: none;
   }
+
+  /* Responsive testimonial and blog by Leslie */
+  .testimonial-container {
+    margin-bottom: 0px;
+    row-gap: 30px;
+    padding-top: 0px;
+  }
+
+  .testimonial-text {
+    width: 85%;
+  }
+
+  .testimonial-text p br {
+    display: none;
+  }
+
+  .testimonial-reviewer {
+    padding: 0;
+    padding-bottom: 35px;
+  }
+
+  .blog-part {
+    display: block;
+  }
+
+  .blog-block {
+    transform: scale(0.9);
+  }
+
+  .blog-block br {
+    display: none;
+  }
+
+  .blog-container {
+    padding-bottom: 100px;
+    clip-path: polygon(0% 6%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .blog-container:after {
+    clip-path: polygon(0 70%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  /* Responsive newsletter and footer by Leslie */
+  .subscribe-container p {
+    padding: 20px;
+  }
+
+  input[type="email"] {
+    width: 200px;
+    border: 2px solid darkgray;
+  }
+
+  .before-footer {
+    display: none;
+  }
+
+  .mobile-before-footer {
+    display: block;
+  }
+
+  .subscribe-container {
+    margin-top: 50px;
+  }
+
+  .footer-part2 {
+    row-gap: 10px;
+  }
+
+  .footer-contact-info {
+    row-gap: 10px;
+  }
+
+  .footer-icons {
+    padding-top: 25px;
+  }
 }
 
 /* Responsive on mobile size 428px */
-@media screen and (max-width:645px) {
+@media screen and (min-width:391px)and (max-width:645px) {
   * {
     margin: 0;
     padding: 0;
