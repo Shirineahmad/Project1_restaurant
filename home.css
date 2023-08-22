@@ -69,7 +69,10 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
+.active-testimonial,
+.dot-testimonial:hover {
+  background-color: #717171;
+}
 .active,
 .dot:hover {
   background-color: #717171;
@@ -93,7 +96,7 @@ body {
 }
 
 /* Position the "next button" to the right */
-.prev {
+.prev{
   left: 0;
   cursor: pointer;
   position: absolute;
@@ -113,7 +116,36 @@ body {
 .next:hover {
   background-color: black;
 }
-
+.prevTestimonial {
+  left: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 43%;
+  width: auto;
+  margin-top: -15px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.nextTestimonial{
+  right: 0;
+cursor: pointer;
+position: absolute;
+top: 43%;
+width: auto;
+margin-top: -15px;
+padding: 16px;
+color: black;
+font-weight: bold;
+font-size: 16px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
 .prev:hover {
   background-color: black;
 }
@@ -398,6 +430,7 @@ ul li {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 
 .active-menu,
 .dot-menu:hover {

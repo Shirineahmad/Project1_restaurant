@@ -50,68 +50,30 @@ carouselContainer.addEventListener('mousemove', (e) => {
   carousel.style.transform = `translateX(-${offsetX}px)`;
 });
 // testimoniol slider
-// script.js
-let currentContent = 0;
-let isHovering = false; 
 
-function showContent(contentIndex) {
-    const contentWidth = document.querySelector('.carousel-container-testimonial').offsetWidth;
-    const dots = document.querySelectorAll('.dot-testimonial');
+let slideIndexTestimonial = 1;
+showSlidesTestimonial(slideIndexTestimonial);
 
-    currentContent = contentIndex;
-    const offset = -currentContent * contentWidth;
-    document.querySelectorAll('.carousel-testimonial').forEach(content => {
-        content.style.transition = 'transform 0.5s ease-in-out'; // Add fade transition
-        
-        content.style.transform = `translateX(${offset}px)`;
-    });
-    // setTimeout(() => {
-    //     document.querySelectorAll('.carousel-testimonial').forEach((content, index) => {
-    //         content.style.transition = `opacity ${index === currentContent ? 1 : 0.5}s`; // Adjust the duration as needed
-    //         content.style.opacity = index === currentContent ? 1 : 0; // Show/hide content with opacity
-       
-    //     });
-    // }, 1000); // Delay the opacity change slightly after the transition starts
-
-    dots.forEach((dot, index) => {
-        if (index === currentContent) {
-            dot.classList.add('active-testimonial');
-        } else {
-            dot.classList.remove('active-testimonial');
-        }
-    });
+function plusSlidesTestimonial(n) {
+    showSlidesTestimonial(slideIndexTestimonial += n);
 }
 
-// Initial slide display
-// showContent(currentContent);
-
-// hover
-
-let currentHover = 0;
-
-function handleHoverAnimation(contentIndexHover) {
-    const carouselContainer = document.querySelector('.carousel-container-testimonial');
-    const carouselItems = document.querySelectorAll('.carousel-testimonial');
-
-    const carouselWidth = carouselContainer.offsetWidth;
-    const offsetHover = contentIndexHover * carouselWidth * -1;
-
-    carouselContainer.addEventListener('mouseenter', () => {
-        carouselItems.forEach(contentHover => {
-            contentHover.style.transition = 'transform 0.5s ease-in-out';
-            contentHover.style.transform = `translateX(${offsetHover}px)`;
-        });
-    });
-
-    carouselContainer.addEventListener('mouseleave', () => {
-        carouselItems.forEach(contentHover2 => {
-            contentHover2.style.transition = 'none';
-            contentHover2.style.transform = 'translateX(0)';
-        });
-    });
+function currentSlideTestimonial(n) {
+    showSlidesTestimonial(slideIndexTestimonial = n);
 }
+function showSlidesTestimonial(n) {
+    let j;
+    let slidesTestimonial = document.querySelectorAll(".carousel-testimonial");
+    console.log(slidesTestimonial);
+    let dotsTestimonial = document.getElementsByClassName("dot-testimonial");
+    if (n > slidesTestimonial.length) { slideIndexTestimonial = 1 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    showContent(currentHover);
-    handleHoverAnimation(currentHover);
-});
+    for (j = 0; j < slidesTestimonial.length; j++) {
+        slidesTestimonial[j].style.display = "none";
+    }
+    for (j = 0; j < dotsTestimonial.length; j++) {
+        dotsTestimonial[j].className = dotsTestimonial[j].className.replace(" active-testimonail", "");
+    }
+    slidesTestimonial[slideIndexTestimonial - 1].style.display = "flex";
+    dotsTestimonial[slideIndexTestimonial - 1].className += " active-testimonial";
+}
