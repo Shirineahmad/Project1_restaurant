@@ -404,6 +404,13 @@ ul li {
   background-color: #ffffff;
   color: #ed7231;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-toggle-icon {
+  font-size: 18px;
 }
 
 .faq-question:hover {
@@ -569,11 +576,13 @@ input[type="email"] {
   }
 
   .menu.active {
-    background-color: transparent;
+    background-color: #ed7231;
     display: block;
+    border-radius: 2px;
+    padding: 0 5px;
     position: absolute;
-    top: 60px;
-    left: 325px;
+    top: 62px;
+    left: 78%;
     z-index: 1;
   }
 
@@ -657,7 +666,7 @@ input[type="email"] {
   }
 
   .meet-the-team-text {
-    width: auto;
+    width: 380px;
     padding-bottom: 0px;
   }
 
@@ -736,7 +745,7 @@ input[type="email"] {
 }
 
 /* Responsive on mobile size 428px */
-@media screen  and (min-width:391px) and (max-width:645px) {
+@media screen and (min-width:391px) and (max-width:645px) {
   * {
     margin: 0;
     padding: 0;
@@ -772,11 +781,13 @@ input[type="email"] {
   }
 
   .menu.active {
-    background-color: transparent;
+    background-color: #ed7231;
     display: block;
+    border-radius: 2px;
+    padding: 0 5px;
     position: absolute;
-    top: 40px;
-    left: 341px;
+    top: 62px;
+    left: 80%;
     z-index: 1;
   }
 
@@ -835,53 +846,6 @@ input[type="email"] {
     display: none;
   }
 
-  /*  Responsive icons  by Shirin */
-  .icons-container {
-    padding: 0px;
-  }
-
-  .icons-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 85px;
-    height: 425px;
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
-  }
-
-  .icons-block1,
-  .icons-block2,
-  .icons-block3,
-  .icons-block4 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 9px;
-    align-items: center;
-    margin: 5px 10px;
-  }
-
-  .empty {
-    display: none;
-  }
-
-  .icons-container p {
-    font-size: 9px;
-    font-weight: 400;
-  }
-
-  .icons-container h6 {
-    letter-spacing: 1px;
-    font-weight: 400;
-  }
-
-  .icons {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icons-container div {
-    padding: 11px 11px;
-  }
-
   /* Responsive the restaurant by Leslie */
   .restaurant-container {
     margin: 0px;
@@ -908,87 +872,82 @@ input[type="email"] {
     clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
     padding-bottom: 90px;
   }
+
+  .meet-the-team-container hr,
+  .find-us-container hr,
+  .faq-container hr,
+  .restaurant-container hr {
+    width: 15%;
+  }
+
+  .meet-the-team-text,
+  .find-us-container p,
+  .faq-item {
+    width: 400px;
+  }
+
+  .faq-container h1 {
+    padding-bottom: 40px;
+  }
+
+  .meet-the-team-chefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meet-the-team-name {
+    padding: 5px 0px;
+  }
+
+  .meet-the-team-position {
+    padding-bottom: 5px;
+  }
+
+  .faq-container {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .carousel-menu {
+    transition: none;
+    width: 100%;
+  }
+
+  /* Responsive newsletter and footer by Leslie */
+  .subscribe-container p {
+    padding: 20px;
+  }
+
+  input[type="email"] {
+    width: 200px;
+    border: 2px solid darkgray;
+  }
+
+  .before-footer {
+    display: none;
+  }
+
+  .mobile-before-footer {
+    display: block;
+  }
+
+  .subscribe-container {
+    margin-top: 50px;
+  }
+
+  .footer-part2 {
+    row-gap: 10px;
+  }
+
+  .footer-contact-info {
+    row-gap: 10px;
+  }
+
+  .footer-icons {
+    padding-top: 25px;
+  }
 }
 
-.meet-the-team-container hr,
-.find-us-container hr,
-.faq-container hr,
-.restaurant-container hr {
-  width: 15%;
-}
-
-.meet-the-team-text,
-.find-us-container p,
-.faq-item {
-  width: 400px;
-}
-
-.faq-container h1 {
-  padding-bottom: 40px;
-}
-
-.meet-the-team-chefs {
-  flex-direction: column;
-}
-
-.meet-the-team-chef1,
-.meet-the-team-chef2,
-.meet-the-team-chef3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.meet-the-team-name {
-  padding: 5px 0px;
-}
-
-.meet-the-team-position {
-  padding-bottom: 5px;
-}
-
-.faq-container {
-  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.carousel-menu {
-  transition: none;
-  width: 100%;
-}
-
-/* Responsive newsletter and footer by Leslie */
-.subscribe-container p {
-  padding: 20px;
-}
-
-input[type="email"] {
-  width: 200px;
-  border: 2px solid darkgray;
-}
-
-.before-footer {
-  display: none;
-}
-
-.mobile-before-footer {
-  display: block;
-}
-
-.subscribe-container {
-  margin-top: 50px;
-}
-
-.footer-part2 {
-  row-gap: 10px;
-}
-
-.footer-contact-info {
-  row-gap: 10px;
-}
-
-.footer-icons {
-  padding-top: 25px;
-}
 
 /* RESPONSIVE on iPad */
 @media screen and (min-width:646px) and (max-width:820px) {

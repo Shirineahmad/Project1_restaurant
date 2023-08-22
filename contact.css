@@ -425,11 +425,13 @@ input[type="email"] {
   }
 
   .menu.active {
-    background-color: transparent;
+    background-color: #ed7231;
     display: block;
+    border-radius: 2px;
+    padding: 0 5px;
     position: absolute;
-    top: 60px;
-    left: 325px;
+    top: 62px;
+    left: 312px;
     z-index: 1;
   }
 
@@ -584,11 +586,13 @@ input[type="email"] {
   }
 
   .menu.active {
-    background-color: transparent;
+    background-color: #ed7231;
     display: block;
+    border-radius: 2px;
+    padding: 0 5px;
     position: absolute;
-    top: 40px;
-    left: 341px;
+    top: 62px;
+    left: 80%;
     z-index: 1;
   }
 
@@ -661,7 +665,7 @@ input[type="email"] {
   }
 
   .yourName,
-  .youreEmail,
+  .yourEmail,
   .yourMessage {
     width: 250px;
   }

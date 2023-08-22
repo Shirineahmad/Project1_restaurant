@@ -78,7 +78,8 @@
     <div class="contact-form-container">
       <form method="get" action="form_results.php" id="myForm">
         <input type="text" name="yourName" id="yourName" class="yourName" placeholder="Your Name*" required>
-        <input type="email" name="yourEmail" id="yourEmail" class="yourEmail" placeholder="Your Email Address*" required>
+        <input type="email" name="yourEmail" id="yourEmail" class="yourEmail" placeholder="Your Email Address*"
+          required>
         <textarea name="yourMessage" id="yourMessage" class="yourMessage" cols="30" rows="10"
           placeholder="Your message*" required></textarea>
         <button class="contact-form-button" type="submit" value="Submit">SUBMIT</button>
@@ -92,8 +93,10 @@
     <p> Savor more for less! Subscribe to our newsletter for exclusive
       deals and event updates. Join us on a flavorful journey!</p>
     <div class="subscribe-mail-input">
-      <input type="email" placeholder="Enter Email Address" class="subscribe-input" />
-      <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+      <form method="get" action="newsletter_results.php" id="newsletterForm">
+        <input type="email" placeholder="Enter Email Address" class="subscribe-input" id="newsletterInput" required />
+        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+      </form>
     </div>
   </div>
 

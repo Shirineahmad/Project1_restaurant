@@ -35,7 +35,8 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
-// contact form clear
+
+// Contact form clear by Shirin 
 document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent form submission (optional, if you want to handle submission with JS)
 
@@ -43,4 +44,13 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     document.getElementById("yourName").value = "";
     document.getElementById("yourEmail").value = "";
     document.getElementById("yourMessage").value = "";
+})
+
+// Newsletter subscribe 
+
+document.getElementById("newsletterForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission (optional, if you want to handle submission with JS)
+
+    // Clear the input field value
+    document.getElementById("newsletterInput").value = "";
 })

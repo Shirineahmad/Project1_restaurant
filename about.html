@@ -145,25 +145,26 @@
 
     <div class="faq-content">
       <div class="faq-item">
-        <div class="faq-question">What type of cuisine do you serve?</div>
+        <div class="faq-question">What type of cuisine do you serve? <span class="faq-toggle-icon">+</span> </div>
         <div class="faq-answer">Indulge in the vibrant flavors of the Mediterranean at our restaurant. We serve fresh
           and wholesome dishes inspired by the rich culinary traditions of the region.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do you offer vegetarian and vegan options?</div>
+        <div class="faq-question">Do you offer vegetarian and vegan options? <span class="faq-toggle-icon">+</span>
+        </div>
         <div class="faq-answer">Absolutely! Our menu caters to all diets and regimes, offering a wide array of delicious
           meaty, fishy, vegetarian and vegan options to satisfy every palate.</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">Do you have a delivery service?</div>
+        <div class="faq-question">Do you have a delivery service? <span class="faq-toggle-icon">+</span> </div>
         <div class="faq-answer">Yes, we do! Enjoy the convenience of our delivery service, bringing our delectable
           dishes right to your doorstep in Beirut and nearby suburbs. Also, find us on Toters and Mozilla!</div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">How can we join your team?</div>
+        <div class="faq-question">How can we join your team? <span class="faq-toggle-icon">+</span> </div>
         <div class="faq-answer">Join our culinary family! To become part of our team, kindly send your resume and a
           brief introduction to careers@foody.com. We look forward to welcoming you onboard!</div>
       </div>
@@ -177,8 +178,10 @@
     <p> Savor more for less! Subscribe to our newsletter for exclusive
       deals and event updates. Join us on a flavorful journey!</p>
     <div class="subscribe-mail-input">
-      <input type="email" placeholder="Enter Email Address" class="subscribe-input" />
-      <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+      <form method="get" action="newsletter_results.php" id="newsletterForm">
+        <input type="email" placeholder="Enter Email Address" class="subscribe-input" id="newsletterInput" required />
+        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+      </form>
     </div>
   </div>
 
