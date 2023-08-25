@@ -540,7 +540,7 @@ input[type="email"] {
   display: flex;
 }
 
-/* RESPONSIVE on mobile size 390px*/
+/* RESPONSIVE on mobile size 390px by Leslie */
 @media screen and (max-width:390px) {
   * {
     margin: 0;
@@ -745,7 +745,7 @@ input[type="email"] {
   }
 }
 
-/* Responsive on mobile size 428px */
+/* RESPONSIVE on mobile size 428px by Shirin */
 @media screen and (min-width:391px) and (max-width:645px) {
   * {
     margin: 0;
@@ -1006,7 +1006,7 @@ input[type="email"] {
   }
 }
 
-/* RESPONSIVE on 11'*/
+/* RESPONSIVE on 11' by Leslie */
 @media screen and (min-width:821px) and (max-width:1366px) {
   .restaurant-container {
     margin: 0px;

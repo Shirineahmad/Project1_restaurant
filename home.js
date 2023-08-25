@@ -118,18 +118,18 @@ const stars = document.querySelectorAll('.star');
 
 function rateStar(starNumber) {
     stars.forEach((star, indexStar) => {
-        if (indexStar < starNumber) {
+        if (indexStar <= starNumber) {
             star.classList.add('active');
-            activeStars = activeStars + 1;
         } else {
             star.classList.remove('active');
         }
+        activeStars = starNumber + 1;
     });
 }
 
-stars.forEach((star, index) => {
+stars.forEach((star, indexStar) => {
     star.addEventListener('click', () => {
-        rateStar(index);
+        rateStar(indexStar);
     });
 });
 
@@ -137,7 +137,7 @@ function hoverStar(starNumber) {
     const stars = document.querySelectorAll('.star');
 
     stars.forEach((star, indexStar) => {
-        if (indexStar <= starNumber - 1) {
+        if (indexStar <= starNumber) {
             star.classList.add('hover');
         } else {
             star.classList.remove('hover');
@@ -145,9 +145,9 @@ function hoverStar(starNumber) {
     });
 }
 
-stars.forEach((star, index) => {
+stars.forEach((star, indexStar) => {
     star.addEventListener('mouseover', () => {
-        hoverStar(index);
+        hoverStar(indexStar);
     });
 });
 
@@ -156,9 +156,9 @@ function resetStars() {
     stars.forEach(star => star.classList.remove('hover'));
 }
 
-stars.forEach((star, index) => {
+stars.forEach((star, indexStar) => {
     star.addEventListener('mouseout', () => {
-        resetStars(index);
+        resetStars(indexStar);
     });
 });
 
@@ -214,9 +214,6 @@ document.getElementById("reviewForm").addEventListener("submit", function (event
     nameShow.innerText = nameInput.value;
     nameShow.style.color = 'black';
     nameShow.style.fontFamily = 'Open Sans, sans-serif';
-
-    // arrayStar.removeEventListener('click');
-    console.log('test arraystar', arrayStar);
 
     review2.innerHTML = newDiv.innerHTML;
 })
