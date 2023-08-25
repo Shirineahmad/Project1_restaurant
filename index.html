@@ -271,8 +271,8 @@
         <h1>TESTIMONIAL</h1>
       </div>
 
-      <!-- First review -->
       <div class="carousel-container-testimonial">
+        <!-- First review -->
         <div class="carousel-testimonial fade">
           <div class="testimonial-text">
             <p>
@@ -294,41 +294,39 @@
         </div>
 
         <!-- Second review  -->
-        <div class="carousel-testimonial fade">
+        <div class="carousel-testimonial fade slider2review">
           <div class="testimonial-text">
             <p>
-              two
+              Your feedback matters! Share your thoughts about your dining experience with us.
             </p>
           </div>
-
-          <div class="testimonial-reviewer">
-            <img src="./testimonial-images/chef-picture.jpg">
-            <div class="testimonial-signature">
-              <p class="testimonial-name">Mike Richardson</p>
-              <p class="testimonial-company">CEO, XYZ COMPANY</p>
-            </div>
-          </div>
-
+          <button type="submit" class="add-review-button" id="add-review-button">LEAVE A REVIEW</button>
         </div>
 
-        <!-- Third review -->
-        <div class="carousel-testimonial fade">
-          <div class="testimonial-text">
-            <p>
-              three
-            </p>
-          </div>
+        <div id="popupContainer">
+          <div id="popupForm">
+            <span class="close-popup">&times;</span>
+            <hr>
+            <h1>LEAVE A REVIEW</h2>
+              <form id="reviewForm">
 
-          <div class="testimonial-reviewer">
-            <img src="./testimonial-images/chef-picture.jpg">
-            <div class="testimonial-signature">
-              <p class="testimonial-name">Mike Richardson</p>
-              <p class="testimonial-company">CEO, XYZ COMPANY</p>
-            </div>
-          </div>
+                <input type="text" id="name-review" name="name" placeholder="Your Name*" required>
 
+                <div class="star-rating">
+                  <span class="star" onclick="rateStar(1)" onmouseover="hoverStar(1)" onmouseout="resetStars()"></span>
+                  <span class="star" onclick="rateStar(2)" onmouseover="hoverStar(2)" onmouseout="resetStars()"></span>
+                  <span class="star" onclick="rateStar(3)" onmouseover="hoverStar(3)" onmouseout="resetStars()"></span>
+                  <span class="star" onclick="rateStar(4)" onmouseover="hoverStar(4)" onmouseout="resetStars()"></span>
+                  <span class="star" onclick="rateStar(5)" onmouseover="hoverStar(5)" onmouseout="resetStars()"></span>
+                </div>
+
+                <textarea id="message-review" name="review" placeholder="Your Review*" cols="15" rows="5"
+                  required></textarea>
+
+                <button type="submit" class="submit-review-button">SUBMIT</button>
+              </form>
+          </div>
         </div>
-
       </div>
 
       <a class="prev-testimonial" onclick="plusSlidesTestimonial(1)">&#10094;</a>
@@ -337,11 +335,9 @@
       <div class="dots-testimonial" id="dots-testimonial">
         <span class="dot-testimonial" onclick="currentSlideTestimonial(1)"></span>
         <span class="dot-testimonial" onclick="currentSlideTestimonial(2)"></span>
-        <span class="dot-testimonial" onclick="currentSlideTestimonial(3)"></span>
       </div>
     </div>
-
-
+    
     <!-- HTML blog by Samiha -->
     <div class="blog-container">
       <hr>
@@ -392,9 +388,9 @@
         deals and event updates. Join us on a flavorful journey!</p>
       <div class="subscribe-mail-input">
         <form method="get" action="newsletter_results.php" id="newsletterForm">
-        <input type="email" placeholder="Enter Email Address" class="subscribe-input" id="newsletterInput" required/>
-        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
-      </form>
+          <input type="email" placeholder="Enter Email Address" class="subscribe-input" id="newsletterInput" required />
+          <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+        </form>
       </div>
     </div>
 

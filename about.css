@@ -166,6 +166,7 @@ a {
   width: 10%;
   background-color: #ed7231;
   border: none;
+  border: 1px solid #ed7231;
 }
 
 .header-contact-button a {
@@ -445,13 +446,13 @@ ul li {
 }
 
 .subscribe-button {
+  color: white;
   background-color: #ed7231;
+  border: 1px solid #ed7231;
+  width: 150px;
   font-size: 15px;
-  font-weight: 300;
-  color: #FFFFFF;
-  width: max-content;
-  padding: 5px 7px;
-  border: none;
+  padding: 5px 0px;
+  margin: auto;
 }
 
 input[type="email"] {

@@ -161,7 +161,7 @@ a {
 .header-contact-button {
   width: 10%;
   background-color: #ed7231;
-  border: none;
+  border: 1px solid #ed7231;
 }
 
 .header-contact-button a {
@@ -653,6 +653,111 @@ hr {
   background-color: black;
 }
 
+/* CSS pop up in testimonial for reviews */
+.add-review-button,
+.submit-review-button {
+  color: white;
+  background-color: #ed7231;
+  border: 1px solid #ed7231;
+  width: 150px;
+  font-size: 15px;
+  padding: 5px 0px;
+  margin: auto;
+}
+
+.submit-review-button {
+  margin-bottom: 15px;
+}
+
+#popupContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#popupForm {
+  background-color: white;
+  width: 60%;
+  max-width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  box-sizing: border-box;
+}
+
+.close-popup {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+#name-review,
+#rating-review,
+#message-review {
+  padding-top: 5px;
+  padding-left: 10px;
+  border: 2px solid darkgrey;
+}
+
+#name-review {
+  padding-bottom: 5px;
+}
+
+input {
+  font-family: "Open Sans", sans-serif;
+  font-display: swap;
+}
+
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-display: swap;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.star-rating {
+  font-size: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.2s;
+}
+
+.star::before {
+  content: '\2605';
+  /* Unicode character for a star */
+}
+
+.star.active::before,
+.star.hover::before {
+  color: #ed7231;
+}
+
+.star.hover::before {
+  color: #ed7231;
+}
+
+
 /* CSS blog by Samiha */
 
 .blog-container {
@@ -762,13 +867,13 @@ hr {
 }
 
 .subscribe-button {
+  color: white;
   background-color: #ed7231;
+  border: 1px solid #ed7231;
+  width: 150px;
   font-size: 15px;
-  font-weight: 300;
-  color: #FFFFFF;
-  width: max-content;
-  padding: 5px 7px;
-  border: none;
+  padding: 5px 0px;
+  margin: auto;
 }
 
 input[type="email"] {

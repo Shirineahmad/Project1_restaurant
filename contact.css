@@ -165,7 +165,7 @@ a {
 .header-contact-button {
   width: 10%;
   background-color: #ed7231;
-  border: none;
+  border: 1px solid #ed7231;
 }
 
 .header-contact-button a {
@@ -239,12 +239,13 @@ form {
 }
 
 .contact-form-button {
+  color: white;
   background-color: #ed7231;
-  color: #FFFFFF;
-  padding: 5px 0px;
-  width: 150px;
   border: 1px solid #ed7231;
-  text-transform: uppercase;
+  width: 150px;
+  font-size: 15px;
+  padding: 5px 0px;
+  margin: auto;
 }
 
 .yourName,
@@ -294,13 +295,13 @@ input {
 }
 
 .subscribe-button {
+  color: white;
   background-color: #ed7231;
+  border: 1px solid #ed7231;
+  width: 150px;
   font-size: 15px;
-  font-weight: 300;
-  color: #FFFFFF;
-  width: max-content;
-  padding: 5px 7px;
-  border: none;
+  padding: 5px 0px;
+  margin: auto;
 }
 
 input[type="email"] {
@@ -742,10 +743,10 @@ input[type="email"] {
     border: 2px solid darkgrey;
   }
 
-.before-footer {
-  padding: 0px 65px;
-  padding-top: 75px;
-}
+  .before-footer {
+    padding: 0px 65px;
+    padding-top: 75px;
+  }
 }
 
 /* RESPONSIVE on 11'*/
