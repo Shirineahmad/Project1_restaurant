@@ -91,6 +91,7 @@ document.getElementById("newsletterForm").addEventListener("submit", function (e
 
 // Pop up review 
 
+let arrayStar;
 const openPopupButton = document.getElementById("add-review-button");
 const popupContainer = document.getElementById("popupContainer");
 const closePopUpSpan = document.querySelector(".close-popup");
@@ -111,17 +112,26 @@ closePopUpSpan.addEventListener("click", () => {
 
 // Star system 
 
-function rateStar(starNumber) {
-    const stars = document.querySelectorAll('.star');
+let activeStars = 0;
 
+const stars = document.querySelectorAll('.star');
+
+function rateStar(starNumber) {
     stars.forEach((star, indexStar) => {
         if (indexStar < starNumber) {
             star.classList.add('active');
+            activeStars = activeStars + 1;
         } else {
             star.classList.remove('active');
         }
     });
 }
+
+stars.forEach((star, index) => {
+    star.addEventListener('click', () => {
+        rateStar(index);
+    });
+});
 
 function hoverStar(starNumber) {
     const stars = document.querySelectorAll('.star');
@@ -135,33 +145,69 @@ function hoverStar(starNumber) {
     });
 }
 
+stars.forEach((star, index) => {
+    star.addEventListener('mouseover', () => {
+        hoverStar(index);
+    });
+});
+
 function resetStars() {
     const stars = document.querySelectorAll('.star');
     stars.forEach(star => star.classList.remove('hover'));
 }
 
+stars.forEach((star, index) => {
+    star.addEventListener('mouseout', () => {
+        resetStars(index);
+    });
+});
+
 // Show review on slider 2 testimonial 
 
 let nameInput = document.getElementById('name-review');
-// let starInput = document.querySelector('star');
 let messageInput = document.getElementById('message-review');
 let submitReview = document.querySelector('.submit-review-button');
-let hideReview2 = document.querySelector('.slider2review');
+let review2 = document.querySelector('.slider2review');
 let dotsReview = document.querySelector('.dots-testimonial');
 
 document.getElementById("reviewForm").addEventListener("submit", function (event) {
     event.preventDefault();
     console.log("Name: ", nameInput.value);
     console.log("Message: ", messageInput.value);
-    hideReview2.style.display = "none";
     popupContainer.style.display = "none";
 
     let newDiv = document.createElement('div');
-    dotsReview.parentNode.insertBefore(newDiv, dotsReview);
     newDiv.style.display = "flex";
     newDiv.style.flexDirection = 'column';
     newDiv.style.alignItems = "center";
     newDiv.style.rowGap = "15px";
+
+    let messageShow = document.createElement('p');
+    messageShow.innerText = `"${messageInput.value}"`;
+    messageShow.style.color = 'black';
+    messageShow.style.fontFamily = 'Open Sans, sans-serif';
+    newDiv.appendChild(messageShow);
+
+    let divForStars = document.createElement('div');
+    let numberOfStars = document.createElement('p');
+    numberOfStars.textContent = activeStars;
+    numberOfStars.style.marginRight = "10px";
+    numberOfStars.style.lineHeight = "20px";
+    numberOfStars.style.textAlign = "center";
+    numberOfStars.style.paddingTop = "2px";
+
+    divForStars.appendChild(numberOfStars);
+
+    stars.forEach(star => {
+        star.removeEventListener('click', rateStar);
+        star.removeEventListener('mouseover', hoverStar);
+        star.removeEventListener('mouseout', resetStars);
+        divForStars.appendChild(star);
+    });
+
+    divForStars.style.display = "flex";
+    divForStars.style.alignItems = "center";
+    newDiv.appendChild(divForStars);
 
     let nameShow = document.createElement('p');
     newDiv.appendChild(nameShow);
@@ -169,21 +215,8 @@ document.getElementById("reviewForm").addEventListener("submit", function (event
     nameShow.style.color = 'black';
     nameShow.style.fontFamily = 'Open Sans, sans-serif';
 
-    let messageShow = document.createElement('p');
-    newDiv.appendChild(messageShow);
-    messageShow.innerText = messageInput.value;
-    messageShow.style.color = 'black';
-    messageShow.style.fontFamily = 'Open Sans, sans-serif';
+    // arrayStar.removeEventListener('click');
+    console.log('test arraystar', arrayStar);
 
-    console.log(newDiv);
-    console.log(messageShow, " ", nameShow);
+    review2.innerHTML = newDiv.innerHTML;
 })
-
-
-/* function plusSlidesTestimonial(n) {
-hideReview2.style.display = "none";
-}
-
-function currentSlideTestimonial(n) {
-hideReview2.style.display = "none";
-} */
