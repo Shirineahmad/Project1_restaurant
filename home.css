@@ -1225,17 +1225,18 @@ input[type="email"] {
     padding: 0;
     padding-bottom: 35px;
   }
-    #popupForm h1 {
-      font-size: 20px;
-    }
-  
-    #popupForm hr {
-      width: 20%;
-    }
-  
-    .star {
-      height: 35px;
-    }
+
+  #popupForm h1 {
+    font-size: 20px;
+  }
+
+  #popupForm hr {
+    width: 20%;
+  }
+
+  .star {
+    height: 35px;
+  }
 
   .blog-part {
     display: block;
@@ -1577,13 +1578,16 @@ input[type="email"] {
     padding: 0;
     padding-bottom: 35px;
   }
-  #popupForm h1{
+
+  #popupForm h1 {
     font-size: 20px;
-  } 
-  #popupForm hr{
+  }
+
+  #popupForm hr {
     width: 20%;
-  } 
-  .star{
+  }
+
+  .star {
     height: 35px;
   }
 
@@ -1706,15 +1710,15 @@ input[type="email"] {
     padding: 0px 65px;
     padding-top: 75px;
   }
-   
-  
-    #popupForm hr {
-      width: 12%;
-    }
-  
-    .star {
-      height: 35px;
-    }
+
+
+  #popupForm hr {
+    width: 12%;
+  }
+
+  .star {
+    height: 35px;
+  }
 }
 
 /* RESPONSIVE on 11' by Leslie */
@@ -1726,6 +1730,14 @@ input[type="email"] {
   .testimonial-container {
     padding-top: 80px;
     margin-bottom: 100px;
+  }
+
+  .blog-block1-image {
+    width: 500px;
+  }
+
+  .blog-block2-image {
+    width: 500px;
   }
 
   .subscribe-container {
